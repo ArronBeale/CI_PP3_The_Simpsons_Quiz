@@ -47,12 +47,13 @@ def clear_screen():
     """
     os.system("cls" if os.name == "nt" else "clear")
 
+
 def main_menu() -> str:
     """
     This will display the players options of play, scoreboard and how to play
     """
     time.sleep(1)
-    print(Col.YELLOW + 'Please choose an option:')
+    print(Col.YELLOW + 'Please choose an option:\n')
     menu_options = '1) Play\n2) Scoreboard\n3) How to play\n\n'
     menu_options_selected = input(menu_options)
 
@@ -70,9 +71,32 @@ def main_menu() -> str:
 
     elif menu_options_selected == '3':
         clear_screen()
-        logo()
+        time.sleep(1)
+        how_to_play()
 
     return menu_options_selected
+
+
+def how_to_play():
+    """
+    This will display instructions on how to play to the player
+    """
+    print(Col.YELLOW + 'How to Play:\n')
+    time.sleep(2)
+    print(Col.YELLOW + 'The quiz will ask you ten (10) questions...\n')
+    time.sleep(2)
+    print(Col.YELLOW + 'Choose 1), 2) or 3)...\n')
+    time.sleep(2)
+    print(Col.YELLOW + 'The questions will be about the characters and the world of The Simpsons...\n')
+    time.sleep(2)
+    print(Col.YELLOW + 'Some questions will be easy for casual fans and other questions will be hard, for the seasoned fans...\n')
+    time.sleep(2)
+    print(Col.YELLOW + 'You will have the option to post your score to the scoreboard at the end.\n')
+    time.sleep(2)
+    print(Col.YELLOW + 'Have fun!\n')
+    time.sleep(2)
+    print(Col.YELLOW + "D'oH!")
+
 
 
 logo()
