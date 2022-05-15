@@ -20,8 +20,23 @@ SCOPED_CREDS = CREDS.with_scopes(SCOPE)
 GSPREAD_CLIENT = gspread.authorize(SCOPED_CREDS)
 SHEET = GSPREAD_CLIENT.open('scoreboard')
 
-scores = SHEET.worksheet('scores').get_all_values()
-players = SHEET.worksheet('players').get_all_values()
+def logo():
+    """
+    Displays the logo and name
+    """
+    print(Col.YELLOW + '\n#######                   #####                                                  #####                  ')
+    print(Col.YELLOW + '   #    #    # ######    #       # #    # #####   ####   ####  #    #  ####     #     # #    # # ###### ')
+    print(Col.YELLOW + '   #    #    # #         #       # ##  ## #    # #      #    # ##   # #         #     # #    # #     #  ')
+    print(Col.YELLOW + '   #    ###### #####      #####  # # ## # #    #  ####  #    # # #  #  ####     #     # #    # #    #   ')
+    print(Col.YELLOW + '   #    #    # #               # # #    # #####       # #    # #  # #      #    #   # # #    # #   #    ')
+    print(Col.YELLOW + '   #    #    # #               # # #    # #      #    # #    # #   ## #    #    #    #  #    # #  #     ')
+    print(Col.YELLOW + '   #    #    # ######     #####  # #    # #       ####   ####  #    #  ####      #### #  ####  # ######\n')
+    print(Col.BLUE + '===========================================================================================================\n')
+    print('Welcome to The Simpsons Quiz!\n')
+    print(Col.GREEN + 'Sponsored by:')
+    print(Col.GREEN + 'Springfield Nuclear Power Plant,')
+    print(Col.GREEN + '100 Industrial Way,')
+    print(Col.GREEN + 'Springfield\n')
 
-print(players)
-print(scores)
+
+logo()
