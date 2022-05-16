@@ -272,4 +272,39 @@ question_cues = [
      3)Answer 3 place holder text\n ",
 ]
 
+questions = [
+    Question(question_cues[0], "1"),
+    Question(question_cues[1], "3"),
+    Question(question_cues[2], "2"),
+    Question(question_cues[3], "2"),
+    Question(question_cues[4], "1"),
+    Question(question_cues[5], "3"),
+    Question(question_cues[6], "2"),
+    Question(question_cues[7], "3"),
+    Question(question_cues[8], "1"),
+    Question(question_cues[9], "1"),
+    Question(question_cues[10], "3"),
+    Question(question_cues[11], "2"),
+    Question(question_cues[12], "2"),
+    Question(question_cues[13], "3"),
+    Question(question_cues[14], "1"),
+    Question(question_cues[15], "3"),
+    Question(question_cues[16], "1"),
+    Question(question_cues[17], "2"),
+    Question(question_cues[18], "3"),
+    Question(question_cues[19], "3"),
+    Question(question_cues[20], "1"),
+    Question(question_cues[21], "3"),
+    Question(question_cues[22], "1"),
+    Question(question_cues[23], "2"),
+    Question(question_cues[24], "2"),
+    Question(question_cues[25], "1"),
+    Question(question_cues[26], "3"),
+    Question(question_cues[27], "2"),
+    Question(question_cues[28], "3"),
+    Question(question_cues[29], "1"),
+
+]
+
+
 home()
