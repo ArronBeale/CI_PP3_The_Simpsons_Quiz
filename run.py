@@ -104,10 +104,20 @@ def how_to_play():
 
 def home():
     """
-    Logo and main menu functions within this function as a home menu
+    Logo and main menu functions combined in this function as a home function
     """
     logo()
     main_menu()
+
+
+class Question:
+    """
+    Questions instance, gets question
+    and answer
+    """
+    def __init__(self, cue, answer):
+        self.cue = cue
+        self.answer = answer
 
 
 home()
