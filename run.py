@@ -120,4 +120,156 @@ class Question:
         self.answer = answer
 
 
+question_cues = [
+    "Question 1 place holder text\n \
+     1)Answer 1 place holder text\n \
+     2)Answer 2 place holder text\n \
+     3)Answer 3 place holder text\n ",
+
+     "Question 2 place holder text\n \
+     1)Answer 1 place holder text\n \
+     2)Answer 2 place holder text\n \
+     3)Answer 3 place holder text\n ",
+
+     "Question 3 place holder text\n \
+     1)Answer 1 place holder text\n \
+     2)Answer 2 place holder text\n \
+     3)Answer 3 place holder text\n ",
+
+     "Question 4 place holder text\n \
+     1)Answer 1 place holder text\n \
+     2)Answer 2 place holder text\n \
+     3)Answer 3 place holder text\n ",
+
+     "Question 5 place holder text\n \
+     1)Answer 1 place holder text\n \
+     2)Answer 2 place holder text\n \
+     3)Answer 3 place holder text\n ",
+
+     "Question 6 place holder text\n \
+     1)Answer 1 place holder text\n \
+     2)Answer 2 place holder text\n \
+     3)Answer 3 place holder text\n ",
+
+     "Question 7 place holder text\n \
+     1)Answer 1 place holder text\n \
+     2)Answer 2 place holder text\n \
+     3)Answer 3 place holder text\n ",
+
+     "Question 8 place holder text\n \
+     1)Answer 1 place holder text\n \
+     2)Answer 2 place holder text\n \
+     3)Answer 3 place holder text\n ",
+
+     "Question 9 place holder text\n \
+     1)Answer 1 place holder text\n \
+     2)Answer 2 place holder text\n \
+     3)Answer 3 place holder text\n ",
+
+     "Question 10 place holder text\n \
+     1)Answer 1 place holder text\n \
+     2)Answer 2 place holder text\n \
+     3)Answer 3 place holder text\n ",
+
+     "Question 11 place holder text\n \
+     1)Answer 1 place holder text\n \
+     2)Answer 2 place holder text\n \
+     3)Answer 3 place holder text\n ",
+
+     "Question 12 place holder text\n \
+     1)Answer 1 place holder text\n \
+     2)Answer 2 place holder text\n \
+     3)Answer 3 place holder text\n ",
+
+     "Question 13 place holder text\n \
+     1)Answer 1 place holder text\n \
+     2)Answer 2 place holder text\n \
+     3)Answer 3 place holder text\n ",
+
+     "Question 14 place holder text\n \
+     1)Answer 1 place holder text\n \
+     2)Answer 2 place holder text\n \
+     3)Answer 3 place holder text\n ",
+
+     "Question 15 place holder text\n \
+     1)Answer 1 place holder text\n \
+     2)Answer 2 place holder text\n \
+     3)Answer 3 place holder text\n ",
+
+     "Question 16 place holder text\n \
+     1)Answer 1 place holder text\n \
+     2)Answer 2 place holder text\n \
+     3)Answer 3 place holder text\n ",
+
+     "Question 17 place holder text\n \
+     1)Answer 1 place holder text\n \
+     2)Answer 2 place holder text\n \
+     3)Answer 3 place holder text\n ",
+
+     "Question 18 place holder text\n \
+     1)Answer 1 place holder text\n \
+     2)Answer 2 place holder text\n \
+     3)Answer 3 place holder text\n ",
+
+     "Question 19 place holder text\n \
+     1)Answer 1 place holder text\n \
+     2)Answer 2 place holder text\n \
+     3)Answer 3 place holder text\n ",
+
+     "Question 20 place holder text\n \
+     1)Answer 1 place holder text\n \
+     2)Answer 2 place holder text\n \
+     3)Answer 3 place holder text\n ",
+
+     "Question 21 place holder text\n \
+     1)Answer 1 place holder text\n \
+     2)Answer 2 place holder text\n \
+     3)Answer 3 place holder text\n ",
+
+     "Question 22 place holder text\n \
+     1)Answer 1 place holder text\n \
+     2)Answer 2 place holder text\n \
+     3)Answer 3 place holder text\n ",
+
+     "Question 23 place holder text\n \
+     1)Answer 1 place holder text\n \
+     2)Answer 2 place holder text\n \
+     3)Answer 3 place holder text\n ",
+
+     "Question 24 place holder text\n \
+     1)Answer 1 place holder text\n \
+     2)Answer 2 place holder text\n \
+     3)Answer 3 place holder text\n ",
+
+     "Question 25 place holder text\n \
+     1)Answer 1 place holder text\n \
+     2)Answer 2 place holder text\n \
+     3)Answer 3 place holder text\n ",
+
+     "Question 26 place holder text\n \
+     1)Answer 1 place holder text\n \
+     2)Answer 2 place holder text\n \
+     3)Answer 3 place holder text\n ",
+
+     "Question 27 place holder text\n \
+     1)Answer 1 place holder text\n \
+     2)Answer 2 place holder text\n \
+     3)Answer 3 place holder text\n ",
+
+     "Question 28 place holder text\n \
+     1)Answer 1 place holder text\n \
+     2)Answer 2 place holder text\n \
+     3)Answer 3 place holder text\n ",
+
+     "Question 29 place holder text\n \
+     1)Answer 1 place holder text\n \
+     2)Answer 2 place holder text\n \
+     3)Answer 3 place holder text\n ",
+
+     "Question 30 place holder text\n \
+     1)Answer 1 place holder text\n \
+     2)Answer 2 place holder text\n \
+     3)Answer 3 place holder text\n ",
+]
+
 home()
