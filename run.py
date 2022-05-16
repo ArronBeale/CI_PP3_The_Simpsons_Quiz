@@ -85,7 +85,7 @@ def how_to_play():
     time.sleep(2)
     print(Col.YELLOW + 'The quiz will ask you ten (10) questions...\n')
     time.sleep(2)
-    print(Col.YELLOW + 'Choose 1), 2) or 3)...\n')
+    print(Col.YELLOW + 'Choose answer 1, 2 or 3...\n')
     time.sleep(2)
     print(Col.YELLOW + 'The questions will be about the characters and the world of The Simpsons...\n')
     time.sleep(2)
@@ -95,9 +95,19 @@ def how_to_play():
     time.sleep(2)
     print(Col.YELLOW + 'Have fun!\n')
     time.sleep(2)
-    print(Col.YELLOW + "D'oH!")
+    print(Col.YELLOW + "D'oH!\n")
+    
+    input('Enter any key to exit: \n')
+    clear_screen()
+    home()
 
 
+def home():
+    """
+    Logo and main menu functions within this function as a home menu
+    """
+    logo()
+    main_menu()
 
-logo()
-main_menu()
+
+home()
