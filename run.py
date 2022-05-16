@@ -1,5 +1,6 @@
 import gspread
 import time
+import datetime
 import os
 import random
 import validation as val
@@ -110,6 +111,45 @@ def home():
     main_menu()
 
 
+def quiz_start(questions):
+    """
+    Start the quiz, track score and select random questions
+    """
+    score = 0
+    question_list = random.sample(questions, 10)
+
+    for sample in question_list:
+        answer = input(sample.cue).lower().strip()
+        if answer not in {'1', '2', '3'}:
+            time.sleep(1)
+            print("Wrong answer!\n Please use:\n1\n2\n3\nfor your answer\n")
+        elif answer == sample.answer:
+            score += 1
+            time.sleep(1)
+            print('Correct answer!\n')
+            print('Next Question...\n')
+        else:
+            time.sleep(1)
+            print("Wrong answer!\n")
+            print('Next Question...\n')
+
+    print("Your score is " + score + " out of 10")
+    time.sleep(1)
+    print("Add score to scoreboard? (Y)es or (N)o")
+    scoreboard_answer = input.lower().strip()
+    date = datetime.datetime.now()
+    name = 'place_holder_name'
+
+    if scoreboard_answer == 'y':
+        time.sleep(1)
+        print("Your score has been added to the scoreboard...\n")
+        scores = SHEET.worksheet('scores')
+        scores.append_row(values=[name, score, date])
+        input('Enter any key to exit: \n')
+        clear_screen()
+        home()
+
+
 class Question:
     """
     Questions instance, gets question
@@ -126,147 +166,147 @@ question_cues = [
      2)Answer 2 place holder text\n \
      3)Answer 3 place holder text\n ",
 
-     "Question 2 place holder text\n \
+    "Question 2 place holder text\n \
      1)Answer 1 place holder text\n \
      2)Answer 2 place holder text\n \
      3)Answer 3 place holder text\n ",
 
-     "Question 3 place holder text\n \
+    "Question 3 place holder text\n \
      1)Answer 1 place holder text\n \
      2)Answer 2 place holder text\n \
      3)Answer 3 place holder text\n ",
 
-     "Question 4 place holder text\n \
+    "Question 4 place holder text\n \
      1)Answer 1 place holder text\n \
      2)Answer 2 place holder text\n \
      3)Answer 3 place holder text\n ",
 
-     "Question 5 place holder text\n \
+    "Question 5 place holder text\n \
      1)Answer 1 place holder text\n \
      2)Answer 2 place holder text\n \
      3)Answer 3 place holder text\n ",
 
-     "Question 6 place holder text\n \
+    "Question 6 place holder text\n \
      1)Answer 1 place holder text\n \
      2)Answer 2 place holder text\n \
      3)Answer 3 place holder text\n ",
 
-     "Question 7 place holder text\n \
+    "Question 7 place holder text\n \
      1)Answer 1 place holder text\n \
      2)Answer 2 place holder text\n \
      3)Answer 3 place holder text\n ",
 
-     "Question 8 place holder text\n \
+    "Question 8 place holder text\n \
      1)Answer 1 place holder text\n \
      2)Answer 2 place holder text\n \
      3)Answer 3 place holder text\n ",
 
-     "Question 9 place holder text\n \
+    "Question 9 place holder text\n \
      1)Answer 1 place holder text\n \
      2)Answer 2 place holder text\n \
      3)Answer 3 place holder text\n ",
 
-     "Question 10 place holder text\n \
+    "Question 10 place holder text\n \
      1)Answer 1 place holder text\n \
      2)Answer 2 place holder text\n \
      3)Answer 3 place holder text\n ",
 
-     "Question 11 place holder text\n \
+    "Question 11 place holder text\n \
      1)Answer 1 place holder text\n \
      2)Answer 2 place holder text\n \
      3)Answer 3 place holder text\n ",
 
-     "Question 12 place holder text\n \
+    "Question 12 place holder text\n \
      1)Answer 1 place holder text\n \
      2)Answer 2 place holder text\n \
      3)Answer 3 place holder text\n ",
 
-     "Question 13 place holder text\n \
+    "Question 13 place holder text\n \
      1)Answer 1 place holder text\n \
      2)Answer 2 place holder text\n \
      3)Answer 3 place holder text\n ",
 
-     "Question 14 place holder text\n \
+    "Question 14 place holder text\n \
      1)Answer 1 place holder text\n \
      2)Answer 2 place holder text\n \
      3)Answer 3 place holder text\n ",
 
-     "Question 15 place holder text\n \
+    "Question 15 place holder text\n \
      1)Answer 1 place holder text\n \
      2)Answer 2 place holder text\n \
      3)Answer 3 place holder text\n ",
 
-     "Question 16 place holder text\n \
+    "Question 16 place holder text\n \
      1)Answer 1 place holder text\n \
      2)Answer 2 place holder text\n \
      3)Answer 3 place holder text\n ",
 
-     "Question 17 place holder text\n \
+    "Question 17 place holder text\n \
      1)Answer 1 place holder text\n \
      2)Answer 2 place holder text\n \
      3)Answer 3 place holder text\n ",
 
-     "Question 18 place holder text\n \
+    "Question 18 place holder text\n \
      1)Answer 1 place holder text\n \
      2)Answer 2 place holder text\n \
      3)Answer 3 place holder text\n ",
 
-     "Question 19 place holder text\n \
+    "Question 19 place holder text\n \
      1)Answer 1 place holder text\n \
      2)Answer 2 place holder text\n \
      3)Answer 3 place holder text\n ",
 
-     "Question 20 place holder text\n \
+    "Question 20 place holder text\n \
      1)Answer 1 place holder text\n \
      2)Answer 2 place holder text\n \
      3)Answer 3 place holder text\n ",
 
-     "Question 21 place holder text\n \
+    "Question 21 place holder text\n \
      1)Answer 1 place holder text\n \
      2)Answer 2 place holder text\n \
      3)Answer 3 place holder text\n ",
 
-     "Question 22 place holder text\n \
+    "Question 22 place holder text\n \
      1)Answer 1 place holder text\n \
      2)Answer 2 place holder text\n \
      3)Answer 3 place holder text\n ",
 
-     "Question 23 place holder text\n \
+    "Question 23 place holder text\n \
      1)Answer 1 place holder text\n \
      2)Answer 2 place holder text\n \
      3)Answer 3 place holder text\n ",
 
-     "Question 24 place holder text\n \
+    "Question 24 place holder text\n \
      1)Answer 1 place holder text\n \
      2)Answer 2 place holder text\n \
      3)Answer 3 place holder text\n ",
 
-     "Question 25 place holder text\n \
+    "Question 25 place holder text\n \
      1)Answer 1 place holder text\n \
      2)Answer 2 place holder text\n \
      3)Answer 3 place holder text\n ",
 
-     "Question 26 place holder text\n \
+    "Question 26 place holder text\n \
      1)Answer 1 place holder text\n \
      2)Answer 2 place holder text\n \
      3)Answer 3 place holder text\n ",
 
-     "Question 27 place holder text\n \
+    "Question 27 place holder text\n \
      1)Answer 1 place holder text\n \
      2)Answer 2 place holder text\n \
      3)Answer 3 place holder text\n ",
 
-     "Question 28 place holder text\n \
+    "Question 28 place holder text\n \
      1)Answer 1 place holder text\n \
      2)Answer 2 place holder text\n \
      3)Answer 3 place holder text\n ",
 
-     "Question 29 place holder text\n \
+    "Question 29 place holder text\n \
      1)Answer 1 place holder text\n \
      2)Answer 2 place holder text\n \
      3)Answer 3 place holder text\n ",
 
-     "Question 30 place holder text\n \
+    "Question 30 place holder text\n \
      1)Answer 1 place holder text\n \
      2)Answer 2 place holder text\n \
      3)Answer 3 place holder text\n ",
