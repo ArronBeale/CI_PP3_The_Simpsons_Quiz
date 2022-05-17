@@ -2,7 +2,7 @@ import gspread
 import time
 import os
 import random
-import validation as val
+import validation
 from time import sleep
 from datetime import datetime
 from google.oauth2.service_account import Credentials
@@ -22,6 +22,7 @@ GSPREAD_CLIENT = gspread.authorize(SCOPED_CREDS)
 SHEET = GSPREAD_CLIENT.open('scoreboard')
 
 date = datetime.now()
+
 
 def logo():
     """
@@ -147,7 +148,7 @@ def quiz_start(questions):
         time.sleep(1)
         print("Your score has been added to the scoreboard...\n")
         scores = SHEET.worksheet('scores')
-        scores.append_row(values=[name, score, date])
+        scores.append_row(values=[validation.name, score, date])
         input('Enter any key to exit: \n')
         clear_screen()
         home()
@@ -175,11 +176,11 @@ def check_player() -> str:
     if replied == '1' or replied == 'y':
         print(Col.YELLOW + 'You answered yes')
         time.sleep(2)
+        validation.register_player()
 
     elif replied == '2' or replied == 'n':
         print(Col.YELLOW + 'You answered no')
         time.sleep(2)
-        val.register_player()
 
     return replied
 
