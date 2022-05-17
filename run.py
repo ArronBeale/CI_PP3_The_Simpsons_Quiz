@@ -22,8 +22,6 @@ GSPREAD_CLIENT = gspread.authorize(SCOPED_CREDS)
 SHEET = GSPREAD_CLIENT.open('scoreboard')
 
 date = datetime.now()
-name = 'Placeholder name'
-
 
 def logo():
     """
@@ -181,6 +179,7 @@ def check_player() -> str:
     elif replied == '2' or replied == 'n':
         print(Col.YELLOW + 'You answered no')
         time.sleep(2)
+        val.register_player()
 
     return replied
 
