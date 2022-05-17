@@ -1,10 +1,10 @@
 import gspread
 import time
-import datetime
 import os
 import random
 import validation as val
 from time import sleep
+from datetime import datetime
 from google.oauth2.service_account import Credentials
 from email_validator import validate_email, EmailNotValidError
 from colors import Color as Col
@@ -21,6 +21,8 @@ SCOPED_CREDS = CREDS.with_scopes(SCOPE)
 GSPREAD_CLIENT = gspread.authorize(SCOPED_CREDS)
 SHEET = GSPREAD_CLIENT.open('scoreboard')
 
+date = datetime.now()
+name = 'Placeholder name'
 
 def logo():
     """
@@ -65,6 +67,7 @@ def main_menu() -> str:
     if menu_options_selected == '1':
         clear_screen()
         logo()
+        quiz_start(questions)
 
     elif menu_options_selected == '2':
         clear_screen()
@@ -133,12 +136,14 @@ def quiz_start(questions):
             print("Wrong answer!\n")
             print('Next Question...\n')
 
-    print("Your score is " + score + " out of 10")
+    print("Your score is: \n")
     time.sleep(1)
-    print("Add score to scoreboard? (Y)es or (N)o")
-    scoreboard_answer = input.lower().strip()
-    date = datetime.datetime.now()
-    name = 'place_holder_name'
+    print(score)
+    time.sleep(1)
+    input("Add score to scoreboard? Y or N\n ")
+
+    scoreboard_answer = input.lower()
+
 
     if scoreboard_answer == 'y':
         time.sleep(1)
@@ -148,6 +153,21 @@ def quiz_start(questions):
         input('Enter any key to exit: \n')
         clear_screen()
         home()
+    else:
+        print('Thank you for playing, returning to Main Menu...')
+        time.sleep(1)
+        clear_screen()
+        home()
+
+
+def check_player() -> str:
+    """
+    Check if player has registered previously
+    """
+    time.sleep(1)
+    print(Col.YELLOW + 'Is this your first visit?\n')
+    reply = '1) Yes \n2) No\n'
+    replied = input(reply)
 
 
 class Question:
