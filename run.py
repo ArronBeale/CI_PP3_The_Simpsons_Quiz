@@ -13,7 +13,7 @@ SCOPE = [
     "https://www.googleapis.com/auth/spreadsheets",
     "https://www.googleapis.com/auth/drive.file",
     "https://www.googleapis.com/auth/drive"
-    ]
+]
 
 
 CREDS = Credentials.from_service_account_file('creds.json')
@@ -23,6 +23,7 @@ SHEET = GSPREAD_CLIENT.open('scoreboard')
 
 date = datetime.now()
 name = 'Placeholder name'
+
 
 def logo():
     """
@@ -100,7 +101,7 @@ def how_to_play():
     print(Col.YELLOW + 'Have fun!\n')
     time.sleep(2)
     print(Col.YELLOW + "D'oH!\n")
-    
+
     input('Enter any key to exit: \n')
     clear_screen()
     home()
@@ -144,7 +145,6 @@ def quiz_start(questions):
 
     scoreboard_answer = input.lower()
 
-
     if scoreboard_answer == 'y':
         time.sleep(1)
         print("Your score has been added to the scoreboard...\n")
@@ -167,7 +167,23 @@ def check_player() -> str:
     time.sleep(1)
     print(Col.YELLOW + 'Is this your first visit?\n')
     reply = '1) Yes \n2) No\n'
-    replied = input(reply)
+    replied = input(reply).lower()
+
+    while replied not in ('1', 'y', '2', 'n'):
+        print(Col.YELLOW + 'Please choose an option:')
+        replied = input(reply).lower()
+        time.sleep(1)
+
+    if replied == '1' or replied == 'y':
+        print(Col.YELLOW + 'You answered yes')
+        time.sleep(2)
+
+    elif replied == '2' or replied == 'n':
+        print(Col.YELLOW + 'You answered no')
+        time.sleep(2)
+
+    return replied
+
 
 
 class Question:
@@ -175,6 +191,7 @@ class Question:
     Questions instance, gets question
     and answer
     """
+
     def __init__(self, cue, answer):
         self.cue = cue
         self.answer = answer
@@ -366,5 +383,6 @@ questions = [
 
 ]
 
-
+check_player()
+clear_screen()
 home()
