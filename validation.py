@@ -45,17 +45,34 @@ def check_player() -> str:
     return replied
 
 
-def get_email():
+def login_player():
     """
-
+    This will login an existing player who is alreay registered
     """
+    print(Col.YELLOW + 'Please verify your login details.\n')
 
+    try:
+        email = get_email()
+
+
+def get_email() -> str:
+    """
+    Ask user for their email address
+    """
+    email = input("What is your email address?\n").strip()
+    return email
 
 def check_player_registered() -> bool:
     """
-
+    Check if the player is registered
     """
+    email_column = PLAYER_SHEET.col_values(2)
 
+    if email in email_column:
+        return True
+    else:
+        return False
+        
 
 def validate_player_email():
     """
