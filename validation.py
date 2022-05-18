@@ -20,6 +20,22 @@ SHEET = GSPREAD_CLIENT.open('scoreboard')
 PLAYER_SHEET = SHEET.worksheet('players')
 
 
+
+def player_login():
+    """
+    This will allow the player to login if they have registered previously
+    """
+
+
+def get_email():
+    """
+    Ask player to input email
+    """
+    global email
+    email = input('What is your email address?\n ')
+    time.sleep(1)
+
+
 def check_player() -> str:
     """
     Check if player has registered previously
@@ -37,68 +53,31 @@ def check_player() -> str:
     if replied == '1' or replied == 'y':
         print(Col.YELLOW + 'You answered yes\n')
         time.sleep(2)
-
+        get_email()
+        time.sleep(1)
+        print(Col.YELLOW + f'Your email is {email}\n')
+        validate_player_email(email)
+         
     elif replied == '2' or replied == 'n':
         print(Col.YELLOW + 'You answered no\n')
         time.sleep(2)
+        get_email()
+        validate_player_email(email)
 
     return replied
 
 
-def login_player():
+def validate_player_email(email: str):
     """
-    This will login an existing player who is alreay registered
+    Validate player email address.
+    Must be in format of name@example.com
+    @param email(string): Player's email address
     """
-    print(Col.YELLOW + 'Please verify your login details.\n')
-
     try:
-        email = get_email()
-
-
-def get_email() -> str:
-    """
-    Ask user for their email address
-    """
-    email = input("What is your email address?\n").strip()
-    return email
-
-def check_player_registered() -> bool:
-    """
-    Check if the player is registered
-    """
-    email_column = PLAYER_SHEET.col_values(2)
-
-    if email in email_column:
+        validate_email(email)
         return True
-    else:
-        return False
-        
 
-def validate_player_email():
-    """
+    except EmailNotValidError as e:
+        print(Col.YELLOW + "\n" + str(e))
+        print(Col.YELLOW + "Please try again.\n")
 
-    """
-
-
-def email_not_found():
-    """
-
-    """
-
-
-def create_player() -> str:
-    """
-
-    """
-
-
-def check_username_suitable():
-    """
-    
-    """
-
-
-def update_worksheet_players():
-    """
-
-    """

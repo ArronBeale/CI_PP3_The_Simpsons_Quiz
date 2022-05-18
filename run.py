@@ -24,6 +24,7 @@ PLAYER_SHEET = SHEET.worksheet('players')
 
 date = datetime.now()
 global name
+global email
 
 
 def logo():
@@ -359,5 +360,4 @@ questions = [
 ]
 
 val.check_player()
-clear_screen()
-home()
+
