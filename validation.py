@@ -4,6 +4,8 @@ from google.oauth2.service_account import Credentials
 from email_validator import validate_email, EmailNotValidError
 from colors import Color as Col
 
+
+# Scope and constant variables for google api and sheets
 SCOPE = [
     "https://www.googleapis.com/auth/spreadsheets",
     "https://www.googleapis.com/auth/drive.file",
@@ -17,17 +19,50 @@ GSPREAD_CLIENT = gspread.authorize(SCOPED_CREDS)
 SHEET = GSPREAD_CLIENT.open('scoreboard')
 PLAYER_SHEET = SHEET.worksheet('players')
 
-name = 'Guest'
 
-def register_player():
+def player_login():
     """
-    Ask player for their name if they have never played previously
+    This will allow the player to login if they have registered previously
     """
-    global name
-    global player_email
 
-    email_location = PLAYER_SHEET.col_values(2)
 
-    time.sleep(1)
-    input('What is your name?\n ')
+def get_email():
+    """
+
+    """
+
+
+def check_player_registered() -> bool:
+    """
+
+    """
+
+def validate_player_email():
+    """
+
+    """
+
+
+def email_not_found():
+    """
+
+    """
+
+
+def create_player() -> str:
+    """
+
+    """
+
+
+def check_username_suitable():
+    """
+    
+    """
+
+
+def update_worksheet_players():
+    """
+
+    """
 

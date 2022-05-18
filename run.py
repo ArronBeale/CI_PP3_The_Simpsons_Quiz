@@ -174,12 +174,12 @@ def check_player() -> str:
         time.sleep(1)
 
     if replied == '1' or replied == 'y':
-        print(Col.YELLOW + 'You answered yes')
+        print(Col.YELLOW + 'You answered yes\n')
         time.sleep(2)
         validation.register_player()
 
     elif replied == '2' or replied == 'n':
-        print(Col.YELLOW + 'You answered no')
+        print(Col.YELLOW + 'You answered no\n')
         time.sleep(2)
 
     return replied
