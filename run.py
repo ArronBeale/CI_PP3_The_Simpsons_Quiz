@@ -2,7 +2,7 @@ import gspread
 import time
 import os
 import random
-import validation
+import validation as val
 from time import sleep
 from datetime import datetime
 from google.oauth2.service_account import Credentials
@@ -20,8 +20,10 @@ CREDS = Credentials.from_service_account_file('creds.json')
 SCOPED_CREDS = CREDS.with_scopes(SCOPE)
 GSPREAD_CLIENT = gspread.authorize(SCOPED_CREDS)
 SHEET = GSPREAD_CLIENT.open('scoreboard')
+PLAYER_SHEET = SHEET.worksheet('players')
 
 date = datetime.now()
+global name
 
 
 def logo():
@@ -148,7 +150,7 @@ def quiz_start(questions):
         time.sleep(1)
         print("Your score has been added to the scoreboard...\n")
         scores = SHEET.worksheet('scores')
-        scores.append_row(values=[validation.name, score, date])
+        scores.append_row(values=[name, score, date])
         input('Enter any key to exit: \n')
         clear_screen()
         home()
@@ -157,33 +159,6 @@ def quiz_start(questions):
         time.sleep(1)
         clear_screen()
         home()
-
-
-def check_player() -> str:
-    """
-    Check if player has registered previously
-    """
-    time.sleep(1)
-    print(Col.YELLOW + 'Is this your first visit?\n')
-    reply = '1) Yes \n2) No\n'
-    replied = input(reply).lower()
-
-    while replied not in ('1', 'y', '2', 'n'):
-        print(Col.YELLOW + 'Please choose an option:')
-        replied = input(reply).lower()
-        time.sleep(1)
-
-    if replied == '1' or replied == 'y':
-        print(Col.YELLOW + 'You answered yes\n')
-        time.sleep(2)
-        validation.register_player()
-
-    elif replied == '2' or replied == 'n':
-        print(Col.YELLOW + 'You answered no\n')
-        time.sleep(2)
-
-    return replied
-
 
 
 class Question:
@@ -383,6 +358,6 @@ questions = [
 
 ]
 
-check_player()
+val.check_player()
 clear_screen()
 home()
