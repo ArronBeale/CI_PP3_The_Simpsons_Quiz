@@ -149,20 +149,20 @@ def quiz_start(questions):
         answer = input(sample.cue).lower().strip()
         if answer not in {'1', '2', '3'}:
             time.sleep(1)
-            print("Wrong answer!\n Please use:\n1\n2\n3\nfor your answer\n")
+            print(Col.RED + "Wrong answer!\n Please use:\n1\n2\n3\nfor your answer\n")
         elif answer == sample.answer:
             score += 1
             time.sleep(1)
-            print('Correct answer!\n')
+            print(Col.GREEN + 'Correct answer!\n')
         else:
             time.sleep(1)
-            print("Wrong answer!\n")
+            print(Col.RED + "Wrong answer!\n")
 
-    print("Your score is: \n")
     time.sleep(1)
-    print(score)
-    time.sleep(1)
-    scoreboard_answer = input("Add score to scoreboard? Y or N\n ").lower()
+    clear_screen()
+    print(Col.YELLOW + f"Your score is: {score} \n")
+    time.sleep(2)
+    scoreboard_answer = input(Col.YELLOW + "Add score to scoreboard? Y or N\n ").lower()
 
     if scoreboard_answer == 'y':
         time.sleep(1)
@@ -178,7 +178,7 @@ def update_scoreboard():
     """
     This will  upload the players score to the scoreboard
     """
-    print('Updating the scoreboard...\n')
+    print(Col.YELLOW + '\nUpdating the scoreboard...\n')
     time.sleep(1)
     SCOREBOARD.append_row(name, score, date)
 
