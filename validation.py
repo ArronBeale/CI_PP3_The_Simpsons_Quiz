@@ -20,13 +20,6 @@ SHEET = GSPREAD_CLIENT.open('scoreboard')
 PLAYER_SHEET = SHEET.worksheet('players')
 
 
-
-def player_login():
-    """
-    This will allow the player to login if they have registered previously
-    """
-
-
 def get_email():
     """
     Ask player to input email

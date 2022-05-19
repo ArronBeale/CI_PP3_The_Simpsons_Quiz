@@ -2,6 +2,7 @@ import gspread
 import time
 import os
 import random
+import pprint
 import validation as val
 from time import sleep
 from datetime import datetime
@@ -20,11 +21,26 @@ CREDS = Credentials.from_service_account_file('creds.json')
 SCOPED_CREDS = CREDS.with_scopes(SCOPE)
 GSPREAD_CLIENT = gspread.authorize(SCOPED_CREDS)
 SHEET = GSPREAD_CLIENT.open('scoreboard')
+SCOREBOARD = SHEET.worksheet('scores')
 PLAYER_SHEET = SHEET.worksheet('players')
 
+scoreboard_data = SCOREBOARD.get_all_values()
+
 date = datetime.now()
-global name
-global email
+name = ''
+email = ''
+score = 0
+date = datetime.now()
+
+def player_login():
+    """
+    This will allow the player to login if they have registered previously
+    """
+    global name
+    name = input(Col.YELLOW + 'What is your name?\n ')
+    time.sleep(1)
+    print(Col.YELLOW + f'\nWelcome {name}\n')
+    time.sleep(2)
 
 
 def logo():
@@ -39,7 +55,7 @@ def logo():
     print(Col.YELLOW + '   #    #    # #               # # #    # #      #    # #    # #   ## #    #    #    #  #    # #  #     ')
     print(Col.YELLOW + '   #    #    # ######     #####  # #    # #       ####   ####  #    #  ####      #### #  ####  # ######\n')
     print(Col.BLUE + '===========================================================================================================\n')
-    print(Col.YELLOW + 'Welcome to The Simpsons Quiz!\n')
+    print(Col.YELLOW + f'{name}, welcome to The Simpsons Quiz!\n')
     print(Col.GREEN + 'Sponsored by:')
     print(Col.GREEN + 'Springfield Nuclear Power Plant,')
     print(Col.GREEN + '100 Industrial Way,')
@@ -75,6 +91,11 @@ def main_menu() -> str:
     elif menu_options_selected == '2':
         clear_screen()
         logo()
+        print(scoreboard_data)
+        time.sleep(1)
+        input(Col.YELLOW + '\nEnter any key to exit: \n')
+        clear_screen()
+        home()
 
     elif menu_options_selected == '3':
         clear_screen()
@@ -94,7 +115,7 @@ def how_to_play():
     time.sleep(2)
     print(Col.YELLOW + 'Choose answer 1, 2 or 3...\n')
     time.sleep(2)
-    print(Col.YELLOW + 'The questions will be about the characters and the world of The Simpsons...\n')
+    print(Col.YELLOW + 'The questions will be about the everything in the world of The Simpsons...\n')
     time.sleep(2)
     print(Col.YELLOW + 'Some questions will be easy for casual fans and other questions will be hard, for the seasoned fans...\n')
     time.sleep(2)
@@ -104,7 +125,7 @@ def how_to_play():
     time.sleep(2)
     print(Col.YELLOW + "D'oH!\n")
 
-    input('Enter any key to exit: \n')
+    input(Col.YELLOW +'Enter any key to exit: \n')
     clear_screen()
     home()
 
@@ -133,33 +154,33 @@ def quiz_start(questions):
             score += 1
             time.sleep(1)
             print('Correct answer!\n')
-            print('Next Question...\n')
         else:
             time.sleep(1)
             print("Wrong answer!\n")
-            print('Next Question...\n')
 
     print("Your score is: \n")
     time.sleep(1)
     print(score)
     time.sleep(1)
-    input("Add score to scoreboard? Y or N\n ")
-
-    scoreboard_answer = input.lower()
+    scoreboard_answer = input("Add score to scoreboard? Y or N\n ").lower()
 
     if scoreboard_answer == 'y':
         time.sleep(1)
-        print("Your score has been added to the scoreboard...\n")
-        scores = SHEET.worksheet('scores')
-        scores.append_row(values=[name, score, date])
-        input('Enter any key to exit: \n')
-        clear_screen()
-        home()
+        update_scoreboard()
     else:
         print('Thank you for playing, returning to Main Menu...')
         time.sleep(1)
         clear_screen()
         home()
+
+
+def update_scoreboard():
+    """
+    This will  upload the players score to the scoreboard
+    """
+    print('Updating the scoreboard...\n')
+    time.sleep(1)
+    SCOREBOARD.append_row(name, score, date)
 
 
 class Question:
@@ -359,5 +380,7 @@ questions = [
 
 ]
 
-val.check_player()
+player_login()
+clear_screen()
+home()
 
