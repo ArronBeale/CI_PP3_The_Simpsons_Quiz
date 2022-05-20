@@ -29,8 +29,9 @@ scoreboard_data = SCOREBOARD.get_all_values()
 date = datetime.now()
 name = ''
 email = ''
-score = 0
-date = datetime.now()
+score = 1
+player_score = []
+
 
 def player_login():
     """
@@ -38,6 +39,20 @@ def player_login():
     """
     global name
     name = input(Col.YELLOW + 'What is your name?\n ')
+
+    try:
+        if len(name) < 3 or len(name) > 12:
+            raise ValueError(
+                'Name needs to be at least 3 characters or maximum 12 characters'
+            )
+    except ValueError as e:
+        print(Col.RED + f'Invalid name length: {e},\nplease try again.\n')
+        time.sleep(1)
+        player_login()
+
+    player_score.append(name)
+    player_score.append(score)
+    # player_score.append(date)
     time.sleep(1)
     print(Col.YELLOW + f'\nWelcome {name}\n')
     time.sleep(2)
@@ -125,7 +140,7 @@ def how_to_play():
     time.sleep(2)
     print(Col.YELLOW + "D'oH!\n")
 
-    input(Col.YELLOW +'Enter any key to exit: \n')
+    input(Col.YELLOW + 'Enter any key to exit: \n')
     clear_screen()
     home()
 
@@ -149,7 +164,7 @@ def quiz_start(questions):
         answer = input(sample.cue).lower().strip()
         if answer not in {'1', '2', '3'}:
             time.sleep(1)
-            print(Col.RED + "Wrong answer!\n Please use:\n1\n2\n3\nfor your answer\n")
+            print(Col.RED + "Wrong answer!\n Please use: 1, 2 or 3 for your answer\n")
         elif answer == sample.answer:
             score += 1
             time.sleep(1)
@@ -160,9 +175,10 @@ def quiz_start(questions):
 
     time.sleep(1)
     clear_screen()
-    print(Col.YELLOW + f"Your score is: {score} \n")
+    print(Col.YELLOW + f"Your score is: {score}\n")
     time.sleep(2)
-    scoreboard_answer = input(Col.YELLOW + "Add score to scoreboard? Y or N\n ").lower()
+    scoreboard_answer = input(
+        Col.YELLOW + "Add score to scoreboard? Y or N\n ").lower()
 
     if scoreboard_answer == 'y':
         time.sleep(1)
@@ -180,7 +196,8 @@ def update_scoreboard():
     """
     print(Col.YELLOW + '\nUpdating the scoreboard...\n')
     time.sleep(1)
-    SCOREBOARD.append_row(name, score, date)
+    SCOREBOARD.append_row(player_score)
+    print(Col.YELLOW + '\nScoreboard has been updated\n')
 
 
 class Question:
@@ -381,6 +398,7 @@ questions = [
 ]
 
 player_login()
-clear_screen()
-home()
-
+# clear_screen()
+# home()
+print(player_score)
+update_scoreboard()
