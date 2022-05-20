@@ -26,10 +26,11 @@ PLAYER_SHEET = SHEET.worksheet('players')
 
 scoreboard_data = SCOREBOARD.get_all_values()
 
-date = datetime.now()
+now = datetime.now()
+date = now.strftime("%m/%d/%Y, %H:%M:%S")
 name = ''
 email = ''
-score = 1
+score = 0
 player_score = []
 
 
@@ -51,8 +52,6 @@ def player_login():
         player_login()
 
     player_score.append(name)
-    player_score.append(score)
-    # player_score.append(date)
     time.sleep(1)
     print(Col.YELLOW + f'\nWelcome {name}\n')
     time.sleep(2)
@@ -166,7 +165,7 @@ def quiz_start(questions):
             time.sleep(1)
             print(Col.RED + "Wrong answer!\n Please use: 1, 2 or 3 for your answer\n")
         elif answer == sample.answer:
-            score += 1
+            score += 10
             time.sleep(1)
             print(Col.GREEN + 'Correct answer!\n')
         else:
@@ -194,10 +193,16 @@ def update_scoreboard():
     """
     This will  upload the players score to the scoreboard
     """
-    print(Col.YELLOW + '\nUpdating the scoreboard...\n')
+    print(Col.GREEN + '\nUpdating the scoreboard...\n')
+    player_score.append(score)
+    player_score.append(date)
     time.sleep(1)
     SCOREBOARD.append_row(player_score)
-    print(Col.YELLOW + '\nScoreboard has been updated\n')
+    print(Col.GREEN + '\nScoreboard has been updated\n')
+    time.sleep(1)
+    input(Col.YELLOW + '\nEnter any key to exit: \n')
+    clear_screen()
+    home()
 
 
 class Question:
@@ -398,7 +403,6 @@ questions = [
 ]
 
 player_login()
-# clear_screen()
-# home()
-print(player_score)
-update_scoreboard()
+clear_screen()
+home()
+
