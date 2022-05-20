@@ -174,6 +174,10 @@ def quiz_start(questions):
 
     time.sleep(1)
     clear_screen()
+    score_screen()
+
+
+def score_screen():    
     print(Col.YELLOW + f"Your score is: {score}\n")
     time.sleep(2)
     scoreboard_answer = input(
@@ -182,11 +186,17 @@ def quiz_start(questions):
     if scoreboard_answer == 'y':
         time.sleep(1)
         update_scoreboard()
-    else:
+
+    elif scoreboard_answer == 'n':
         print('Thank you for playing, returning to Main Menu...')
-        time.sleep(1)
+        time.sleep(2)
         clear_screen()
         home()
+
+    else:
+        print(Col.RED + 'Please choose Y or N')
+        time.sleep(1)
+        score_screen()
 
 
 def update_scoreboard():
@@ -196,10 +206,10 @@ def update_scoreboard():
     print(Col.GREEN + '\nUpdating the scoreboard...\n')
     player_score.append(score)
     player_score.append(date)
-    time.sleep(1)
+    time.sleep(2)
     SCOREBOARD.append_row(player_score)
     print(Col.GREEN + '\nScoreboard has been updated\n')
-    time.sleep(1)
+    time.sleep(2)
     input(Col.YELLOW + '\nEnter any key to exit: \n')
     clear_screen()
     home()
