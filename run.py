@@ -27,7 +27,7 @@ PLAYER_SHEET = SHEET.worksheet('players')
 scoreboard_data = SCOREBOARD.get_all_values()
 
 now = datetime.now()
-date = now.strftime("%m/%d/%Y, %H:%M:%S")
+date = now.strftime("%m/%d/%Y")
 name = ''
 email = ''
 score = 0
