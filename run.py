@@ -39,7 +39,7 @@ def player_login():
     This will allow the player to login if they have registered previously
     """
     global name
-    name = input(Col.YELLOW + 'What is your name?\n ')
+    name = input(Col.YELLOW + 'What is your name?\n')
 
     try:
         if len(name) < 3 or len(name) > 12:
@@ -69,11 +69,11 @@ def logo():
     print(Col.YELLOW + '   #    #    # #               # # #    # #      #    # #    # #   ## #    #    #    #  #    # #  #     ')
     print(Col.YELLOW + '   #    #    # ######     #####  # #    # #       ####   ####  #    #  ####      #### #  ####  # ######\n')
     print(Col.BLUE + '===========================================================================================================\n')
-    print(Col.YELLOW + f'{name}, welcome to The Simpsons Quiz!\n')
+    print(Col.YELLOW + 'Welcome to The Simpsons Quiz!')
+    print(Col.YELLOW + f'Employee: {name}\n')
     print(Col.GREEN + 'Sponsored by:')
-    print(Col.GREEN + 'Springfield Nuclear Power Plant,')
-    print(Col.GREEN + '100 Industrial Way,')
-    print(Col.GREEN + 'Springfield\n')
+    print(Col.GREEN + 'Springfield Nuclear Power Plant Staff IQ Dept.')
+    print(Col.GREEN + '"A smart worker prevents meltdowns"\n')
     time.sleep(1)
 
 
@@ -107,7 +107,7 @@ def main_menu() -> str:
         logo()
         print(scoreboard_data)
         time.sleep(1)
-        input(Col.YELLOW + '\nEnter any key to exit: \n')
+        input(Col.YELLOW + '\nEnter any key to exit:\n')
         clear_screen()
         home()
 
@@ -139,7 +139,7 @@ def how_to_play():
     time.sleep(2)
     print(Col.YELLOW + "D'oH!\n")
 
-    input(Col.YELLOW + 'Enter any key to exit: \n')
+    input(Col.YELLOW + 'Enter any key to exit:\n')
     clear_screen()
     home()
 
@@ -181,7 +181,7 @@ def score_screen():
     print(Col.YELLOW + f"Your score is: {score}\n")
     time.sleep(2)
     scoreboard_answer = input(
-        Col.YELLOW + "Add score to scoreboard? Y or N\n ").lower()
+        Col.YELLOW + "Add score to scoreboard? Y or N\n").lower()
 
     if scoreboard_answer == 'y':
         time.sleep(1)
@@ -210,7 +210,7 @@ def update_scoreboard():
     SCOREBOARD.append_row(player_score)
     print(Col.GREEN + '\nScoreboard has been updated\n')
     time.sleep(2)
-    input(Col.YELLOW + '\nEnter any key to exit: \n')
+    input(Col.YELLOW + '\nEnter any key to exit:\n')
     clear_screen()
     home()
 
