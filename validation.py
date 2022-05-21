@@ -25,9 +25,9 @@ def get_email():
     Ask player to input email
     """
     global email
-    email = input('What is your email address?\n ')
+    email = input(Col.YELLOW + 'What is your email address?\n ')
     time.sleep(1)
-
+    return email
 
 def check_player() -> str:
     """
@@ -60,6 +60,13 @@ def check_player() -> str:
     return replied
 
 
+def retrieve_player_name():
+    """
+    This function will search database for the players email he submitted on
+    a previous visit and retrieve his name to greet him
+    """
+
+
 def validate_player_email(email: str):
     """
     Validate player email address.
@@ -71,6 +78,7 @@ def validate_player_email(email: str):
         return True
 
     except EmailNotValidError as e:
-        print(Col.YELLOW + "\n" + str(e))
-        print(Col.YELLOW + "Please try again.\n")
+        print(Col.RED + "\n" + str(e))
+        print(Col.RED + "Please try again.\n")
+        get_email()
 

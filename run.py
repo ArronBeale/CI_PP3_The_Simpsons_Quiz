@@ -436,6 +436,7 @@ questions = [
 
 ]
 
+val.check_player()
 player_login()
 clear_screen()
 home()
