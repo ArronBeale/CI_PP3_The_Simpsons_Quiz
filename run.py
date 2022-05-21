@@ -36,7 +36,8 @@ player_score = []
 
 def player_login():
     """
-    This will allow the player to login if they have registered previously
+    This function will ask player for their name and email in order
+    to register them for when they return in the future
     """
     global name
     name = input(Col.YELLOW + 'What is your name?\n')
@@ -44,7 +45,8 @@ def player_login():
     try:
         if len(name) < 3 or len(name) > 12:
             raise ValueError(
-                'Name needs to be at least 3 characters or maximum 12 characters'
+                """Name needs to be at least 3 characters
+                or maximum 12 characters"""
             )
     except ValueError as e:
         print(Col.RED + f'Invalid name length: {e},\nplease try again.\n')
@@ -64,7 +66,7 @@ def logo():
     """
     clear_screen()
 
-    print(Col.YELLOW + """   
+    print(Col.YELLOW + """
 ████████╗██╗░░██╗███████╗  
 ╚══██╔══╝██║░░██║██╔════╝  
 ░░░██║░░░███████║█████╗░░  
@@ -80,13 +82,14 @@ def logo():
 ╚═════╝░╚═╝╚═╝░░░░░╚═╝╚═╝░░░░░╚═════╝░░╚════╝░╚═╝░░╚══╝╚═════╝░
 Quiz""")
 
-    print(Col.BLUE + '================================================================================\n')
+    print(Col.BLUE +
+          '================================================================\n')
     print(Col.YELLOW + 'Welcome to The Simpsons Quiz!')
     print(Col.YELLOW + f'Employee: {name}\n')
     print(Col.GREEN + 'Sponsored by:')
     print(Col.GREEN + 'Springfield Nuclear Power Plant Staff IQ Dept.')
     print(Col.GREEN + '"A smart worker prevents meltdowns"\n')
-    time.sleep(1)
+    time.sleep(2)
 
 
 def clear_screen():
@@ -101,7 +104,7 @@ def main_menu() -> str:
     This will display the players options of play, scoreboard and how to play
     """
     time.sleep(1)
-    print(Col.YELLOW + 'Please choose an option:\n')
+    print(Col.YELLOW + 'Please choose an option:')
     menu_options = '1) Play\n2) Scoreboard\n3) How to play\n\n'
     menu_options_selected = input(menu_options)
 
@@ -142,11 +145,17 @@ def how_to_play():
     time.sleep(2)
     print(Col.GREEN + 'Choose answer 1, 2 or 3...\n')
     time.sleep(2)
-    print(Col.GREEN + 'The questions will be about the everything \nin the world of The Simpsons...\n')
+    print(Col.GREEN + """
+The questions will be about the everything
+in the world of The Simpsons...\n""")
     time.sleep(2)
-    print(Col.GREEN + 'Some questions will be easy for casual fans and \nother questions will be hard, for the seasoned fans...\n')
+    print(Col.GREEN + """
+Some questions will be easy for casual fans and
+other questions will be hard, for the seasoned fans...\n""")
     time.sleep(2)
-    print(Col.GREEN + 'You will have the option to post your score to the \nscoreboard at the end.\n')
+    print(Col.GREEN + """
+You will have the option to post your score to the
+scoreboard at the end.\n""")
     time.sleep(2)
     print(Col.GREEN + 'Have fun!\n')
     time.sleep(2)
@@ -175,7 +184,9 @@ def quiz_start(questions):
         answer = input(sample.cue).lower().strip()
         if answer not in {'1', '2', '3'}:
             time.sleep(1)
-            print(Col.RED + "Wrong answer!\n Please use: 1, 2 or 3 for your answer\n")
+            print(Col.RED + """
+Wrong answer!
+Please use: 1, 2 or 3 for your answer\n""")
         elif answer == sample.answer:
             global score
             score += 10
@@ -190,7 +201,7 @@ def quiz_start(questions):
     score_screen()
 
 
-def score_screen():    
+def score_screen():
     print(Col.YELLOW + f"Your score is: {score}\n")
     time.sleep(2)
     scoreboard_answer = input(
@@ -428,4 +439,3 @@ questions = [
 player_login()
 clear_screen()
 home()
-
