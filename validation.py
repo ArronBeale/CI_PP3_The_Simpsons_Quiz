@@ -29,6 +29,7 @@ def get_email():
     time.sleep(1)
     return email
 
+
 def check_player() -> str:
     """
     Check if player has registered previously
@@ -50,8 +51,8 @@ def check_player() -> str:
         time.sleep(1)
         print(Col.YELLOW + f'Your email is {email}\n')
         validate_player_email(email)
-        retrieve_player_name(email) # Todo retrieve name from sheet
-         
+        retrieve_player_name(email)  # Todo retrieve name from sheet
+
     elif replied == '2' or replied == 'n':
         print(Col.YELLOW + 'You answered no\n')
         time.sleep(2)
@@ -68,7 +69,7 @@ def retrieve_player_name():
     """
     player_email_row = PLAYER_SHEET.find(email).row
     player_name = PLAYER_SHEET.row_values(player_email_row)[0]
-    global name # To be checked
+    global name  # To be checked
     name = player_name
     return name
 
@@ -87,4 +88,3 @@ def validate_player_email(email: str):
         print(Col.RED + "\n" + str(e))
         print(Col.RED + "Please try again.\n")
         get_email()
-
