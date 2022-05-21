@@ -61,6 +61,7 @@ def logo():
     """
     Displays the logo and name
     """
+    clear_screen()
     print(Col.YELLOW + '\n#######                   #####                                                  #####                  ')
     print(Col.YELLOW + '   #    #    # ######    #       # #    # #####   ####   ####  #    #  ####     #     # #    # # ###### ')
     print(Col.YELLOW + '   #    #    # #         #       # ##  ## #    # #      #    # ##   # #         #     # #    # #     #  ')
@@ -123,21 +124,22 @@ def how_to_play():
     """
     This will display instructions on how to play to the player
     """
-    print(Col.YELLOW + 'How to Play:\n')
+    print(Col.YELLOW + f'Employee: {name}\n')
+    print(Col.GREEN + 'How to Play:\n')
     time.sleep(2)
-    print(Col.YELLOW + 'The quiz will ask you ten (10) questions...\n')
+    print(Col.GREEN + 'The quiz will ask you ten (10) questions...\n')
     time.sleep(2)
-    print(Col.YELLOW + 'Choose answer 1, 2 or 3...\n')
+    print(Col.GREEN + 'Choose answer 1, 2 or 3...\n')
     time.sleep(2)
-    print(Col.YELLOW + 'The questions will be about the everything in the world of The Simpsons...\n')
+    print(Col.GREEN + 'The questions will be about the everything \nin the world of The Simpsons...\n')
     time.sleep(2)
-    print(Col.YELLOW + 'Some questions will be easy for casual fans and other questions will be hard, for the seasoned fans...\n')
+    print(Col.GREEN + 'Some questions will be easy for casual fans and \nother questions will be hard, for the seasoned fans...\n')
     time.sleep(2)
-    print(Col.YELLOW + 'You will have the option to post your score to the scoreboard at the end.\n')
+    print(Col.GREEN + 'You will have the option to post your score to the \nscoreboard at the end.\n')
     time.sleep(2)
-    print(Col.YELLOW + 'Have fun!\n')
+    print(Col.GREEN + 'Have fun!\n')
     time.sleep(2)
-    print(Col.YELLOW + "D'oH!\n")
+    print(Col.GREEN + "D'oH!\n")
 
     input(Col.YELLOW + 'Enter any key to exit:\n')
     clear_screen()
@@ -156,7 +158,6 @@ def quiz_start(questions):
     """
     Start the quiz, track score and select random questions
     """
-    score = 0
     question_list = random.sample(questions, 10)
 
     for sample in question_list:
@@ -165,6 +166,7 @@ def quiz_start(questions):
             time.sleep(1)
             print(Col.RED + "Wrong answer!\n Please use: 1, 2 or 3 for your answer\n")
         elif answer == sample.answer:
+            global score
             score += 10
             time.sleep(1)
             print(Col.GREEN + 'Correct answer!\n')
