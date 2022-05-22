@@ -23,6 +23,9 @@ GSPREAD_CLIENT = gspread.authorize(SCOPED_CREDS)
 SHEET = GSPREAD_CLIENT.open('scoreboard')
 PLAYER_SHEET = SHEET.worksheet('players')
 
+name = ''
+email = ''
+player_creds = []
 
 def check_player() -> str:
     """
@@ -45,6 +48,8 @@ def check_player() -> str:
         get_email()
         time.sleep(1)
         print(Col.YELLOW + f'Your email is {email}\n')
+        time.sleep(1)
+        player_login()
 
     elif replied == '2' or replied == 'n':
         print(Col.YELLOW + 'You answered no\n')
@@ -86,7 +91,9 @@ def register_new_player():
     This function will add new players email and name to players database
     in order to allow them to be remembered when they visit again.
     """
-    PLAYER_SHEET.append_row(email)
+    player_creds.append(name)
+    player_creds.append(email)
+    PLAYER_SHEET.append_row(player_creds)
 
 
 def retrieve_player_name():
@@ -123,6 +130,7 @@ def player_login():
     time.sleep(1)
     clear_screen()
     print(Col.YELLOW + f'\nWelcome {name}\n')
+    register_new_player()
     time.sleep(2)
 
 

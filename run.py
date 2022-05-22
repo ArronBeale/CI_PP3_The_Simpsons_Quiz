@@ -4,6 +4,7 @@ import os
 import random
 import pprint
 import validation as val
+from validation import name
 from time import sleep
 from datetime import datetime
 from google.oauth2.service_account import Credentials
@@ -28,8 +29,6 @@ scoreboard_data = SCOREBOARD.get_all_values()
 
 now = datetime.now()
 date = now.strftime("%m/%d/%Y")
-name = ''
-email = ''
 score = 0
 player_score = []
 
@@ -69,14 +68,16 @@ Quiz""")
 
 def clear_screen():
     """
-    This function will allow the screen to be cleared as player navigates
+    This function will allow the screen to be cleared
+    in order to display new information such as how to play or scoreboard
     """
     os.system("cls" if os.name == "nt" else "clear")
 
 
 def main_menu() -> str:
     """
-    This will display the players options of play, scoreboard and how to play
+    This will display the players options of 
+    play, scoreboard and how to play
     """
     time.sleep(1)
     print(Col.YELLOW + 'Please choose an option:')
@@ -203,6 +204,7 @@ def update_scoreboard():
     This will  upload the players score to the scoreboard
     """
     print(Col.GREEN + '\nUpdating the scoreboard...\n')
+    player_score.append(name)
     player_score.append(score)
     player_score.append(date)
     time.sleep(2)
@@ -412,6 +414,7 @@ questions = [
 ]
 
 val.check_player()
-val.player_login()
 clear_screen()
+print(name)
+time.sleep(5)
 home()
