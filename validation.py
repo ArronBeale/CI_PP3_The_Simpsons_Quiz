@@ -51,13 +51,14 @@ def check_player() -> str:
         time.sleep(1)
         print(Col.YELLOW + f'Your email is {email}\n')
         validate_player_email(email)
-        retrieve_player_name(email)  # Todo retrieve name from sheet
+        retrieve_player_name()
 
     elif replied == '2' or replied == 'n':
         print(Col.YELLOW + 'You answered no\n')
         time.sleep(2)
         get_email()
         validate_player_email(email)
+        retrieve_player_name()
 
     return replied
 
@@ -69,9 +70,9 @@ def retrieve_player_name():
     """
     player_email_row = PLAYER_SHEET.find(email).row
     player_name = PLAYER_SHEET.row_values(player_email_row)[0]
-    global name  # To be checked
-    name = player_name
-    return name
+    print(f'\nWelcome back {player_name}')
+    time.sleep(2)
+    return player_name
 
 
 def validate_player_email(email: str):

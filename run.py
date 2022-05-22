@@ -40,7 +40,7 @@ def player_login():
     to register them for when they return in the future
     """
     global name
-    name = input(Col.YELLOW + 'What is your name?\n')
+    name = input(Col.YELLOW + '\nWhat is your name?\n')
 
     try:
         if len(name) < 3 or len(name) > 12:
