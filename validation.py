@@ -48,7 +48,7 @@ def check_player() -> str:
         time.sleep(2)
         get_email()
         time.sleep(1)
-        print(Col.YELLOW + f'Your email is {email}\n')
+        print(Col.YELLOW + f'\nYour email is {email}\n')
         time.sleep(1)
         player_login()
 
@@ -112,8 +112,7 @@ def retrieve_player_name():
         print('\nEmail not found in past player records, adding now')
         time.sleep(3)
         player_login()
-        # register_new_player()
-
+        
 
 def player_login():
     """

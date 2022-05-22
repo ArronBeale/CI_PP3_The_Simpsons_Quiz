@@ -228,155 +228,155 @@ class Question:
 
 
 question_cues = [
-    "Question 1 place holder text\n \
-     1)Answer 1 place holder text\n \
-     2)Answer 2 place holder text\n \
-     3)Answer 3 place holder text\n ",
+    "What is Grandpa Simpsons first name?\n \
+     1) Abraham\n \
+     2) Gabriel\n \
+     3) Johnny\n ",
 
-    "Question 2 place holder text\n \
-     1)Answer 1 place holder text\n \
-     2)Answer 2 place holder text\n \
-     3)Answer 3 place holder text\n ",
+    "What is the address of the Simpson Family?\n \
+     1) 211 jebediah Street\n \
+     2) 143 Shelbyville road\n \
+     3) 742 Evergreen Terrace\n ",
 
-    "Question 3 place holder text\n \
-     1)Answer 1 place holder text\n \
-     2)Answer 2 place holder text\n \
-     3)Answer 3 place holder text\n ",
+    "Who founded Springfield?\n \
+     1) Mayor Quimby\n \
+     2) Jebediah Sringfield\n \
+     3) Mr Burns\n ",
 
-    "Question 4 place holder text\n \
-     1)Answer 1 place holder text\n \
-     2)Answer 2 place holder text\n \
-     3)Answer 3 place holder text\n ",
+    "Who is the owner of Globex Corporation?\n \
+     1) Mr Burns\n \
+     2) Hank Scorpio\n \
+     3) Ned Flanders\n ",
 
-    "Question 5 place holder text\n \
-     1)Answer 1 place holder text\n \
-     2)Answer 2 place holder text\n \
-     3)Answer 3 place holder text\n ",
+    "What is Moe's full name?\n \
+     1) Moe Szyslak\n \
+     2) Moe Murphy\n \
+     3) Moe Mahony\n ",
 
-    "Question 6 place holder text\n \
-     1)Answer 1 place holder text\n \
-     2)Answer 2 place holder text\n \
-     3)Answer 3 place holder text\n ",
+    "What is Barney's full name?\n \
+     1) Barney Stumble\n \
+     2) Barney Bumble\n \
+     3) Barney Gumble\n ",
 
-    "Question 7 place holder text\n \
-     1)Answer 1 place holder text\n \
-     2)Answer 2 place holder text\n \
-     3)Answer 3 place holder text\n ",
+    "What is Homer's favorite beer?\n \
+     1) Vodka\n \
+     2) Duff Beer\n \
+     3) Guinness\n ",
 
-    "Question 8 place holder text\n \
-     1)Answer 1 place holder text\n \
-     2)Answer 2 place holder text\n \
-     3)Answer 3 place holder text\n ",
+    "Where does Homer work?\n \
+     1) Springfield Area 51\n \
+     2) Springfield Hydro Electric Dam\n \
+     3) Springfield Nuclear Power Plant\n ",
 
-    "Question 9 place holder text\n \
-     1)Answer 1 place holder text\n \
-     2)Answer 2 place holder text\n \
-     3)Answer 3 place holder text\n ",
+    "What is Lenny's full name?\n \
+     1) Lenny Leonard\n \
+     2) Lenny Lenny\n \
+     3) Lenny Lovejoy\n ",
 
-    "Question 10 place holder text\n \
-     1)Answer 1 place holder text\n \
-     2)Answer 2 place holder text\n \
-     3)Answer 3 place holder text\n ",
+    "What is Carls full name?\n \
+     1) Carl Carlson\n \
+     2) Carl Skinner\n \
+     3) Carl Burns\n ",
 
-    "Question 11 place holder text\n \
-     1)Answer 1 place holder text\n \
-     2)Answer 2 place holder text\n \
-     3)Answer 3 place holder text\n ",
+    "What instrument does Lisa play?\n \
+     1) Drums\n \
+     2) Guitar\n \
+     3) Saxaphone\n ",
 
-    "Question 12 place holder text\n \
-     1)Answer 1 place holder text\n \
-     2)Answer 2 place holder text\n \
-     3)Answer 3 place holder text\n ",
+    "What color is Barts shorts?\n \
+     1) Green\n \
+     2) Blue\n \
+     3) Red\n ",
 
-    "Question 13 place holder text\n \
-     1)Answer 1 place holder text\n \
-     2)Answer 2 place holder text\n \
-     3)Answer 3 place holder text\n ",
+    "Who is Bart's best friend?\n \
+     1) Nelson\n \
+     2) Millhouse\n \
+     3) Ralph\n ",
 
-    "Question 14 place holder text\n \
-     1)Answer 1 place holder text\n \
-     2)Answer 2 place holder text\n \
-     3)Answer 3 place holder text\n ",
+    "What is Millhouse's full name?\n \
+     1) Millhouse O'Malley\n \
+     2) Millhouse Housingtom\n \
+     3) Millhouse Van Houten\n ",
 
-    "Question 15 place holder text\n \
-     1)Answer 1 place holder text\n \
-     2)Answer 2 place holder text\n \
-     3)Answer 3 place holder text\n ",
+    "Who owns Springfield nuclear Power Plant?\n \
+     1) Mr Burns\n \
+     2) Mr Smithers\n \
+     3) Mayor Quimby\n ",
 
-    "Question 16 place holder text\n \
-     1)Answer 1 place holder text\n \
-     2)Answer 2 place holder text\n \
-     3)Answer 3 place holder text\n ",
+    "What is Mr Burns full name?\n \
+     1) Jerry Alexander Burns\n \
+     2) Johnny Burns\n \
+     3) Charles Montgomery Burns\n ",
 
-    "Question 17 place holder text\n \
-     1)Answer 1 place holder text\n \
-     2)Answer 2 place holder text\n \
-     3)Answer 3 place holder text\n ",
+    "What town is rival to Springfield?\n \
+     1) Shelbyville\n \
+     2) Smellville\n \
+     3) Acorn Creek\n ",
 
-    "Question 18 place holder text\n \
-     1)Answer 1 place holder text\n \
-     2)Answer 2 place holder text\n \
-     3)Answer 3 place holder text\n ",
+    "Who shot Mr Burns?\n \
+     1) Homer Simpson\n \
+     2) Maggie Simpson\n \
+     3) Smithers\n ",
 
-    "Question 19 place holder text\n \
-     1)Answer 1 place holder text\n \
-     2)Answer 2 place holder text\n \
-     3)Answer 3 place holder text\n ",
+    "What does the J in Homer J Simpsons stand for?\n \
+     1) Jason\n \
+     2) Jerry\n \
+     3) Jay\n ",
 
-    "Question 20 place holder text\n \
-     1)Answer 1 place holder text\n \
-     2)Answer 2 place holder text\n \
-     3)Answer 3 place holder text\n ",
+    "What is Homers' favorite food?\n \
+     1) Clams\n \
+     2) Ham\n \
+     3) Donuts\n ",
 
-    "Question 21 place holder text\n \
-     1)Answer 1 place holder text\n \
-     2)Answer 2 place holder text\n \
-     3)Answer 3 place holder text\n ",
+    "Who is Barts enemy?\n \
+     1) Sideshow Bob\n \
+     2) Krusty the Clown\n \
+     3) Ned Flanders\n ",
 
-    "Question 22 place holder text\n \
-     1)Answer 1 place holder text\n \
-     2)Answer 2 place holder text\n \
-     3)Answer 3 place holder text\n ",
+    "Where does Apu work?\n \
+     1) Springfield Elementary School\n \
+     2) Moe's Tavern\n \
+     3) Kwik-E-Mart\n ",
 
-    "Question 23 place holder text\n \
-     1)Answer 1 place holder text\n \
-     2)Answer 2 place holder text\n \
-     3)Answer 3 place holder text\n ",
+    "What is Apu's last name?\n \
+     1) Nahasapeemapetilon\n \
+     2) Ram\n \
+     3) Sunita\n ",
 
-    "Question 24 place holder text\n \
-     1)Answer 1 place holder text\n \
-     2)Answer 2 place holder text\n \
-     3)Answer 3 place holder text\n ",
+    "What nationality is Groundskeeper Willie?\n \
+     1) Irish\n \
+     2) Scottish\n \
+     3) English\n ",
 
-    "Question 25 place holder text\n \
-     1)Answer 1 place holder text\n \
-     2)Answer 2 place holder text\n \
-     3)Answer 3 place holder text\n ",
+    "What are Ned Flanders sons names?\n \
+     1) Steve and Stan\n \
+     2) Rod and Todd\n \
+     3) Jack and Jed\n ",
 
-    "Question 26 place holder text\n \
-     1)Answer 1 place holder text\n \
-     2)Answer 2 place holder text\n \
-     3)Answer 3 place holder text\n ",
+    "What is Barts dog called?\n \
+     1) Santa's Little Helper\n \
+     2) Fido\n \
+     3) Barky\n ",
 
-    "Question 27 place holder text\n \
-     1)Answer 1 place holder text\n \
-     2)Answer 2 place holder text\n \
-     3)Answer 3 place holder text\n ",
+    "What color is Marge Simpsons hair?\n \
+     1) Green\n \
+     2) Black\n \
+     3) Blue\n ",
 
-    "Question 28 place holder text\n \
-     1)Answer 1 place holder text\n \
-     2)Answer 2 place holder text\n \
-     3)Answer 3 place holder text\n ",
+    "Who is Barts Teacher?\n \
+     1) Principle Skinner\n \
+     2) Mrs Krabappel\n \
+     3) Miss Hoover\n ",
 
-    "Question 29 place holder text\n \
-     1)Answer 1 place holder text\n \
-     2)Answer 2 place holder text\n \
-     3)Answer 3 place holder text\n ",
+    "What are the names of the two Aliens in the Simpsons?\n \
+     1) Kling and Clonk\n \
+     2) Clunk and clink\n \
+     3) Kang and Kodos\n ",
 
-    "Question 30 place holder text\n \
-     1)Answer 1 place holder text\n \
-     2)Answer 2 place holder text\n \
-     3)Answer 3 place holder text\n ",
+    "How does Bart travel around Springfield?\n \
+     1) Skateboard\n \
+     2) Bicycle\n \
+     3) Hoverboard\n ",
 ]
 
 questions = [
@@ -415,4 +415,5 @@ questions = [
 
 val.check_player()
 clear_screen()
+score = 0
 home()
