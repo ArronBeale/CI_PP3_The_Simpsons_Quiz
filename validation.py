@@ -1,6 +1,7 @@
 #  Import of requirements for this project
 import gspread
 import time
+import os
 from google.oauth2.service_account import Credentials
 from email_validator import validate_email, EmailNotValidError
 from colors import Color as Col
@@ -44,8 +45,6 @@ def check_player() -> str:
         get_email()
         time.sleep(1)
         print(Col.YELLOW + f'Your email is {email}\n')
-        validate_player_email(email)
-        retrieve_player_name()
 
     elif replied == '2' or replied == 'n':
         print(Col.YELLOW + 'You answered no\n')
@@ -82,6 +81,14 @@ def validate_player_email(email: str):
         get_email()
 
 
+def register_new_player():
+    """
+    This function will add new players email and name to players database
+    in order to allow them to be remembered when they visit again.
+    """
+    PLAYER_SHEET.append_row(email)
+
+
 def retrieve_player_name():
     """
     This function will search database for the players email submitted on
@@ -92,4 +99,36 @@ def retrieve_player_name():
     print(f'\nWelcome back {player_name}')
     time.sleep(2)
     return player_name
-    
+
+
+def player_login():
+    """
+    This function will ask player for their name and email in order
+    to register them for when they return in the future
+    """
+    global name
+    name = input(Col.YELLOW + '\nWhat is your name?\n')
+
+    try:
+        if len(name) < 3 or len(name) > 12:
+            raise ValueError(
+                """Name needs to be at least 3 characters
+                or maximum 12 characters"""
+            )
+    except ValueError as e:
+        print(Col.RED + f'Invalid name length: {e},\nplease try again.\n')
+        time.sleep(1)
+        player_login()
+
+    time.sleep(1)
+    clear_screen()
+    print(Col.YELLOW + f'\nWelcome {name}\n')
+    time.sleep(2)
+
+
+def clear_screen():
+    """
+    This function will allow the screen to be cleared
+    in order to display new information such as how to play or scoreboard
+    """
+    os.system("cls" if os.name == "nt" else "clear")

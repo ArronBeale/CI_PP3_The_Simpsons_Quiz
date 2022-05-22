@@ -34,35 +34,10 @@ score = 0
 player_score = []
 
 
-def player_login():
-    """
-    This function will ask player for their name and email in order
-    to register them for when they return in the future
-    """
-    global name
-    name = input(Col.YELLOW + '\nWhat is your name?\n')
-
-    try:
-        if len(name) < 3 or len(name) > 12:
-            raise ValueError(
-                """Name needs to be at least 3 characters
-                or maximum 12 characters"""
-            )
-    except ValueError as e:
-        print(Col.RED + f'Invalid name length: {e},\nplease try again.\n')
-        time.sleep(1)
-        player_login()
-
-    player_score.append(name)
-    time.sleep(1)
-    clear_screen()
-    print(Col.YELLOW + f'\nWelcome {name}\n')
-    time.sleep(2)
-
-
 def logo():
     """
-    Displays the logo and name
+    Displays the logo and name to at the main menu.
+    Allow user to see that it is a quiz.
     """
     clear_screen()
 
@@ -437,6 +412,6 @@ questions = [
 ]
 
 val.check_player()
-player_login()
+val.player_login()
 clear_screen()
 home()
