@@ -27,9 +27,10 @@ name = ''
 email = ''
 player_creds = []
 
+
 def check_player() -> str:
     """
-    Checks if player has registered previously,
+    Checks if player has played previously,
     Calls on get email function and validate email function
     """
     time.sleep(1)
@@ -101,11 +102,17 @@ def retrieve_player_name():
     This function will search database for the players email submitted on
     a previous visit and retrieve their name to greet them
     """
-    player_email_row = PLAYER_SHEET.find(email).row
-    player_name = PLAYER_SHEET.row_values(player_email_row)[0]
-    print(f'\nWelcome back {player_name}')
-    time.sleep(2)
-    return player_name
+    try:
+        player_email_row = PLAYER_SHEET.find(email).row
+        player_name = PLAYER_SHEET.row_values(player_email_row)[0]
+        print(f'\nWelcome back {player_name}')
+        time.sleep(2)
+        return player_name
+    except AttributeError:
+        print('\nEmail not found in past player records, adding now')
+        time.sleep(3)
+        player_login()
+        # register_new_player()
 
 
 def player_login():

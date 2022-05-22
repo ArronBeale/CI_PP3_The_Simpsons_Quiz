@@ -415,6 +415,4 @@ questions = [
 
 val.check_player()
 clear_screen()
-print(name)
-time.sleep(5)
 home()
