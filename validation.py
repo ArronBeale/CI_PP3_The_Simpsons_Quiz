@@ -1,3 +1,4 @@
+#  Import of requirements for this project
 import gspread
 import time
 from google.oauth2.service_account import Credentials
@@ -5,13 +6,15 @@ from email_validator import validate_email, EmailNotValidError
 from colors import Color as Col
 
 
-# Scope and constant variables for google api and sheets
+#  Scope and constant variables for google api and sheets
 SCOPE = [
     "https://www.googleapis.com/auth/spreadsheets",
     "https://www.googleapis.com/auth/drive.file",
     "https://www.googleapis.com/auth/drive"
 ]
 
+
+#  Constants for credentials to authorise access to database
 CREDS = Credentials.from_service_account_file('creds.json')
 SCOPED_CREDS = CREDS.with_scopes(SCOPE)
 GSPREAD_CLIENT = gspread.authorize(SCOPED_CREDS)
@@ -20,19 +23,10 @@ SHEET = GSPREAD_CLIENT.open('scoreboard')
 PLAYER_SHEET = SHEET.worksheet('players')
 
 
-def get_email():
-    """
-    Ask player to input email
-    """
-    global email
-    email = input(Col.YELLOW + 'What is your email address?\n ')
-    time.sleep(1)
-    return email
-
-
 def check_player() -> str:
     """
-    Check if player has registered previously
+    Checks if player has registered previously,
+    Calls on get email function and validate email function
     """
     time.sleep(1)
     print(Col.YELLOW + 'Is this your first visit?\n')
@@ -60,19 +54,16 @@ def check_player() -> str:
         validate_player_email(email)
         retrieve_player_name()
 
-    return replied
 
-
-def retrieve_player_name():
+def get_email():
     """
-    This function will search database for the players email submitted on
-    a previous visit and retrieve their name to greet them
+    This will ask player to input their email address
     """
-    player_email_row = PLAYER_SHEET.find(email).row
-    player_name = PLAYER_SHEET.row_values(player_email_row)[0]
-    print(f'\nWelcome back {player_name}')
-    time.sleep(2)
-    return player_name
+    global email
+    email = input(Col.YELLOW + 'What is your email address?\n ')
+    time.sleep(1)
+    validate_player_email(email)
+    return email
 
 
 def validate_player_email(email: str):
@@ -89,3 +80,16 @@ def validate_player_email(email: str):
         print(Col.RED + "\n" + str(e))
         print(Col.RED + "Please try again.\n")
         get_email()
+
+
+def retrieve_player_name():
+    """
+    This function will search database for the players email submitted on
+    a previous visit and retrieve their name to greet them
+    """
+    player_email_row = PLAYER_SHEET.find(email).row
+    player_name = PLAYER_SHEET.row_values(player_email_row)[0]
+    print(f'\nWelcome back {player_name}')
+    time.sleep(2)
+    return player_name
+    
