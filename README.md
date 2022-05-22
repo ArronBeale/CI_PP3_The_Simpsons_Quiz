@@ -1,31 +1,202 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# The Simpsons Quiz
+This project is currently a work in progress
+Developer: Arron Beale
 
-Welcome Arron,
+![responsive display image]()
 
-This is the Code Institute student template for deploying your third portfolio project, the Python command-line project. The last update to this file was: **August 17, 2021**
 
-## Reminders
+## Table of Content
+1. [Project Goals](#project-goals)
+   1. [User Goals](#user-goals)
+   2. [Site owner Goals](#site-owner-goals)
+2. [User Experience](#User-Experience)
+   1. [Target Audience](#target-audience)
+   2. [User Requirements and Expectations](#user-requirments-and-expectations)
+   3. [User Stories](#user-stories)
+3. [Technical Design](#technical-design)
+   1. [Design Choices](#design-choices)
+   2. [Color](#color)
+   4. [Logic Flow](#Logic-Flow)
+   5. [Wireframes](#wireframes)
+4. [Technologies Used](#technologies-used)
+   1. [Languages](#Languages)
+   2. [Frameworks and Tools](#frameworks-and-tools)
+5. [Features](#features)
+6. [Testing](#validation)
+   1. [PEP8 Validation](#pep8-validation)
+   4. [Performance](#performance)
+   5. [Device Testing](#Performing-tests-on-devices)
+   6. [Browser Compatability](#browser-compatability)
+   7. [Testing User Stories](#testing-user-stories)
+8. [Bugs](#bugs)
+9. [Deployment](#deployment)
+10. [Credits](#credits)
+11. [Acknowledgements](#ackowledgements)
 
-* Your code must be placed in the `run.py` file
-* Your dependencies must be placed in the `requirements.txt` file
-* Do not edit any of the other files or your code may not deploy properly
+## Project Goals
 
-## Creating the Heroku app
+### User Goals
+- 
+- 
+- 
+- 
 
-When you create the app, you will need to add two buildpacks from the _Settings_ tab. The ordering is as follows:
+### Site Owner Goals
+- 
+- 
+- 
+- 
 
-1. `heroku/python`
-2. `heroku/nodejs`
+[Back to Top](<#table-of-content>)
+## User Experience
 
-You must then create a _Config Var_ called `PORT`. Set this to `8000`
+### Target Audience
+- 
+- 
+- 
+- 
 
-If you have credentials, such as in the Love Sandwiches project, you must create another _Config Var_ called `CREDS` and paste the JSON into the value field.
+### User Requirments and Expectations
+- 
+- 
+- 
+- 
+- 
+- 
+- 
 
-Connect your GitHub repository and deploy as normal.
+### User Stories
 
-## Constraints
+### First Time User
+1. 
+2. 
+3. 
+4. 
+5. 
 
-The deployment terminal is set to 80 columns by 24 rows. That means that each line of text needs to be 80 characters or less otherwise it will be wrapped onto a second line.
+### Returning User
+6. 
+7. 
+ 
+### Site Owner
+8. 
+13. 
+14. 
+15. 
+16. 
+17. 
+18. 
+19. 
+20. 
 
------
-Happy coding!
+[Back to Top](<#table-of-content>)
+## Technical Design
+
+
+### Flow Chart
+
+
+### Wireframes
+
+<details><summary>Home</summary>
+<img src="">
+</details>
+
+   
+[Back to Top](<#table-of-content>)
+## Technologies Used
+
+### Languages
+- HTML
+- CSS
+- JavaScript
+
+### Frameworks and Tools
+- [Balsamiq](https://balsamiq.com/)
+
+- [GitPod](https://gitpod.io/)
+
+- [Git](https://git-scm.com/)
+
+- [GitHub](https://github.com/)
+
+- [Google Fonts](https://fonts.google.com/)
+
+- [Font Awesome](https://fontawesome.com/)
+
+[Back to Top](<#Table-of-Content>)
+
+## Features
+
+
+
+
+[Back to Top](<#table-of-content>)
+## Validation
+
+
+### PEP8 Validation
+<details><summary>Home</summary>
+<img src="">
+</details>
+
+
+### Testing User Stories
+First Time User:
+1. 
+
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|-------------|------------|---------------------|-------------------|
+| | | |  |
+| | | | |
+
+<details><summary>Images</summary>
+<img src="">
+<img src="">
+</details>
+
+[Back to Top](<#table-of-content>)
+## Bugs
+
+| **Bug** | **Fix** |
+| ----------- | ----------- |
+| | |
+
+
+[Back to Top](<#table-of-content>)
+## Deployment
+The website was deployed to GitHub Pages via the following:
+1. From Github repository select settings
+2. Select pages from the left menu
+3. Select the master branch
+4. When the page refreshes you will see a message to notify you the site is now published
+
+You can for fork the repository by following these steps:
+1. Go to the GitHub repository
+2. Click on Fork button in upper right hand corner
+
+You can clone the repository by following these steps:
+1. Go to the GitHub repository 
+2. Locate the Code button above the list of files and click it 
+3. Select if you prefere to clone using HTTPS, SSH, or Github CLI and click the copy button to copy the URL to your clipboard
+4. Open Git Bash
+5. Change the current working directory to the one where you want the cloned directory
+6. Type git clone and paste the URL from the clipboard ($ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY)
+7.Press Enter to create your local clone.
+
+[Back to Top](<#table-of-content>)
+## Credits
+- 
+
+### Media
+- 
+
+### Code
+- 
+
+## Acknowledgements
+
+Special thanks to the following:
+- 
+
+[Back to Top](<#table-of-content>)
