@@ -155,7 +155,8 @@ def quiz_start(questions):
     Start the quiz, track score and select random questions
     """
     question_list = random.sample(questions, 10)
-
+    global score
+    score = 0
     for sample in question_list:
         answer = input(sample.cue).lower().strip()
         if answer not in {'1', '2', '3'}:
@@ -164,7 +165,7 @@ def quiz_start(questions):
 Wrong answer!
 Please use: 1, 2 or 3 for your answer\n""")
         elif answer == sample.answer:
-            global score
+       
             score += 10
             time.sleep(1)
             print(Col.GREEN + 'Correct answer!\n')
