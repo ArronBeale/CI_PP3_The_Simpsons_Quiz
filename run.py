@@ -2,9 +2,7 @@ import gspread
 import time
 import os
 import random
-import pprint
 import validation as val
-from validation import name
 from time import sleep
 from datetime import datetime
 from google.oauth2.service_account import Credentials
@@ -59,7 +57,7 @@ Quiz""")
     print(Col.BLUE +
           '================================================================\n')
     print(Col.YELLOW + 'Welcome to The Simpsons Quiz!')
-    print(Col.YELLOW + f'Employee: {name}\n')
+    print(Col.YELLOW + 'Employee: {name}\n'.format(name=val.name))
     print(Col.GREEN + 'Sponsored by:')
     print(Col.GREEN + 'Springfield Nuclear Power Plant Staff IQ Dept.')
     print(Col.GREEN + '"A smart worker prevents meltdowns"\n')
@@ -116,7 +114,7 @@ def how_to_play():
     This will display instructions on how to play to the player
     and then allow them to exit back to the main menu
     """
-    print(Col.YELLOW + f'Employee: {name}\n')
+    print(Col.YELLOW + 'Employee: {name}\n'.format(name=val.name))
     print(Col.GREEN + 'How to Play:\n')
     time.sleep(2)
     print(Col.GREEN + 'The quiz will ask you ten (10) questions...\n')
@@ -207,7 +205,7 @@ def update_scoreboard():
     This will  upload the players score to the scoreboard
     """
     print(Col.GREEN + '\nUpdating the scoreboard...\n')
-    player_score.append(name)
+    player_score.append(val.name)
     player_score.append(score)
     player_score.append(date)
     time.sleep(2)
