@@ -3,7 +3,7 @@ This project is currently a work in progress
 Developer: Arron Beale
 
 ![responsive display image]()
-
+[Deployed Site](https://the-simpsons-quiz.herokuapp.com/)
 
 ## Table of Content
 1. [Project Goals](#project-goals)
@@ -36,47 +36,43 @@ Developer: Arron Beale
 ## Project Goals
 
 ### User Goals
-- 
-- 
-- 
-- 
+- To play a fun quiz game based on The Simpsons
+- To test my knowledge of The Simpsons world
+- The site remembers me on my next visit
+- My score is recorded to a scoreboard
 
 ### Site Owner Goals
-- 
-- 
-- 
-- 
+- To provide a fun quiz to users
+- To register new players and remember previous players
+- To provide a how to play screen
+- To ensureplayers get feedback while playing
 
 [Back to Top](<#table-of-content>)
 ## User Experience
 
 ### Target Audience
-- 
-- 
-- 
-- 
+- The target audience for The Simpsons Quiz is
+anyone who is a fan of the show and from ages 10 years and older.
 
 ### User Requirments and Expectations
-- 
-- 
-- 
-- 
-- 
-- 
-- 
+- A fun and engaging quiz
+- Intuitive navigation and flow throughout
+- Ability to save score to a scoreboard
+- Name is remembered on next visit
+- Ability to view a scoreboard of past players
 
 ### User Stories
 
 ### First Time User
-1. 
-2. 
-3. 
-4. 
-5. 
+1. As a player, I would like to know how to play
+2. As a player, I would like to have a main menu
+3. As a player, I would like to register my name and email for future visits
+4. As a player, I would like to upload my score to a scoreboard
+5. As a player, I would like to know how to play
 
 ### Returning User
-6. 
-7. 
+6. As a returning player, I would like to be remembered
+7. As a returning player, I would like to view a scoreboard
  
 ### Site Owner
 8. 

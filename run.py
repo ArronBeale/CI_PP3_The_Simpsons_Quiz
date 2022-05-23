@@ -76,8 +76,9 @@ def clear_screen():
 
 def main_menu() -> str:
     """
-    This will display the players options of 
-    play, scoreboard and how to play
+    This will display the players options of
+    play, scoreboard and how to play allowing them
+    to choose an option.
     """
     time.sleep(1)
     print(Col.YELLOW + 'Please choose an option:')
@@ -113,6 +114,7 @@ def main_menu() -> str:
 def how_to_play():
     """
     This will display instructions on how to play to the player
+    and then allow them to exit back to the main menu
     """
     print(Col.YELLOW + f'Employee: {name}\n')
     print(Col.GREEN + 'How to Play:\n')
@@ -165,7 +167,7 @@ def quiz_start(questions):
 Wrong answer!
 Please use: 1, 2 or 3 for your answer\n""")
         elif answer == sample.answer:
-       
+
             score += 10
             time.sleep(1)
             print(Col.GREEN + 'Correct answer!\n')
