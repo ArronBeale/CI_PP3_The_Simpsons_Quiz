@@ -75,16 +75,13 @@ anyone who is a fan of the show and from ages 10 years and older.
 7. As a returning player, I would like to view a scoreboard
  
 ### Site Owner
-8. 
-13. 
-14. 
-15. 
-16. 
-17. 
-18. 
-19. 
-20. 
-
+8. As the site owner, I would like the game to be challenging and fun.
+13. As the site owner, I would like an eye catching logo
+14. As the site owner, I would like some humor on the main menu
+15. As the site owner, I would like valid data from the player especially correct email formats
+16. As the site owner, I would like a database of player scores, names and emails
+17. As the site owner, i would like to give the option for a player to submit their score or not
+ 
 [Back to Top](<#table-of-content>)
 ## Technical Design
 
