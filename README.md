@@ -15,10 +15,8 @@ Note: Ctrl + click to open in a new tap
    2. [User Requirements and Expectations](#user-requirments-and-expectations)
    3. [User Stories](#user-stories)
 3. [Technical Design](#technical-design)
-   1. [Design Choices](#design-choices)
-   2. [Color](#color)
-   4. [Logic Flow](#Logic-Flow)
-   5. [Wireframes](#wireframes)
+   1. [Flowcharts](#flowcharts)
+   2. [Wireframes](#wireframes)
 4. [Technologies Used](#technologies-used)
    1. [Languages](#Languages)
    2. [Frameworks and Tools](#frameworks-and-tools)
@@ -87,8 +85,19 @@ anyone who is a fan of the show and from ages 10 years and older.
 ## Technical Design
 
 
-### Flow Chart
+### Flow Charts
 
+<details><summary>Main Menu</summary>
+<img src="https://raw.githubusercontent.com/ArronBeale/CI_PP3_The_Simpsons_Quiz/main/docs/flowcharts/flow-main-menu.png">
+</details>
+
+<details><summary>Questions</summary>
+<img src="https://raw.githubusercontent.com/ArronBeale/CI_PP3_The_Simpsons_Quiz/main/docs/flowcharts/flow-questions.png">
+</details>
+
+<details><summary>Scoreboard</summary>
+<img src="https://raw.githubusercontent.com/ArronBeale/CI_PP3_The_Simpsons_Quiz/main/docs/flowcharts/flow-scoreboard.png">
+</details>
 
 ### Wireframes
 
