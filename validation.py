@@ -112,7 +112,7 @@ def retrieve_player_name():
         print('\nEmail not found in past player records, adding now')
         time.sleep(3)
         player_login()
- 
+
 
 def player_login():
     """
