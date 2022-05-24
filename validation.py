@@ -51,6 +51,7 @@ def check_player() -> str:
         print(Col.YELLOW + f'\nYour email is {email}\n')
         time.sleep(1)
         player_login()
+        register_new_player()
 
     elif replied == '2' or replied == 'n':
         print(Col.YELLOW + 'You answered no\n')
@@ -85,6 +86,7 @@ def validate_player_email(email: str):
         print(Col.RED + "\n" + str(e))
         print(Col.RED + "Please try again.\n")
         get_email()
+        return False
 
 
 def register_new_player():
@@ -128,10 +130,15 @@ def player_login():
                 """Name needs to be at least 3 characters
                 or maximum 12 characters"""
             )
+            
+        else:
+            return True
+
     except ValueError as e:
         print(Col.RED + f'Invalid name length: {e},\nplease try again.\n')
         time.sleep(1)
         player_login()
+        return False
 
     time.sleep(1)
     clear_screen()
