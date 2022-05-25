@@ -187,12 +187,14 @@ def score_screen():
     if scoreboard_answer == 'y':
         time.sleep(1)
         update_scoreboard()
+        return True
 
     elif scoreboard_answer == 'n':
         print('Thank you for playing, returning to Main Menu...')
         time.sleep(2)
         clear_screen()
         home()
+        return False
 
     else:
         print(Col.RED + 'Please choose Y or N')

@@ -52,6 +52,7 @@ def check_player() -> str:
         time.sleep(1)
         player_login()
         register_new_player()
+        return True
 
     elif replied == '2' or replied == 'n':
         print(Col.YELLOW + 'You answered no\n')
@@ -59,6 +60,7 @@ def check_player() -> str:
         get_email()
         validate_player_email(email)
         retrieve_player_name()
+        return False
 
 
 def get_email():
@@ -104,12 +106,17 @@ def retrieve_player_name():
     This function will search database for the players email submitted on
     a previous visit and retrieve their name to greet them
     """
+    global name
+    global player_name
     try:
         player_email_row = PLAYER_SHEET.find(email).row
         player_name = PLAYER_SHEET.row_values(player_email_row)[0]
         print(f'\nWelcome back {player_name}')
         time.sleep(2)
+
+        name = player_name
         return player_name
+        return name
     except AttributeError:
         print('\nEmail not found in past player records, adding now')
         time.sleep(3)
@@ -130,7 +137,7 @@ def player_login():
                 """Name needs to be at least 3 characters
                 or maximum 12 characters"""
             )
-            
+
         else:
             return True
 
