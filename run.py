@@ -96,6 +96,7 @@ def main_menu() -> str:
     elif menu_options_selected == '2':
         clear_screen()
         logo()
+        print(Col.YELLOW + 'Scoreboard:')
         print(tabulate(scoreboard_data))
         time.sleep(1)
         input(Col.YELLOW + '\nEnter any key to exit:\n')
