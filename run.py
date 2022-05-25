@@ -1,4 +1,6 @@
+#  Import of requirements for this project
 import gspread
+from tabulate import tabulate
 import time
 import os
 import random
@@ -6,7 +8,6 @@ import validation as val
 from time import sleep
 from datetime import datetime
 from google.oauth2.service_account import Credentials
-from email_validator import validate_email, EmailNotValidError
 from colors import Color as Col
 
 SCOPE = [
@@ -95,7 +96,7 @@ def main_menu() -> str:
     elif menu_options_selected == '2':
         clear_screen()
         logo()
-        print(scoreboard_data)
+        print(tabulate(scoreboard_data))
         time.sleep(1)
         input(Col.YELLOW + '\nEnter any key to exit:\n')
         clear_screen()
@@ -420,3 +421,6 @@ val.check_player()
 clear_screen()
 score = 0
 home()
+
+# print(val.SCORES_HEADERS[2])
+# val.scoreboard_rows()

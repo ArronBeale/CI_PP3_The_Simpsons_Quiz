@@ -22,6 +22,8 @@ GSPREAD_CLIENT = gspread.authorize(SCOPED_CREDS)
 
 SHEET = GSPREAD_CLIENT.open('scoreboard')
 PLAYER_SHEET = SHEET.worksheet('players')
+SCORE_SHEET = SHEET.worksheet('scores')
+SCORES_HEADERS = SCORE_SHEET.row_values(1)
 
 name = ''
 email = ''
