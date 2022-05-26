@@ -180,8 +180,32 @@ Please use: 1, 2 or 3 for your answer\n""")
     score_screen()
 
 
+def create_player_dict():
+    player_dict = {
+        'Name': val.name,
+        'Score': str(score),
+        'Email': val.email
+    }
+    print(Col.GREEN + 'Employee: ' + player_dict['Name'])
+    time.sleep(1)
+    print(Col.GREEN + 'Score: ' + player_dict['Score'])
+    time.sleep(1)
+    print(Col.GREEN + 'Email: ' + player_dict['Email'])
+    time.sleep(1)
+    print(Col.GREEN + 'Work Email: ' + player_dict['Name'] +
+          '@SpringfieldNuclear.com\n')
+    time.sleep(1)
+    print(Col.GREEN +
+          'Congratulations, your employment has not been terminated\n')
+    time.sleep(1)
+    print(Col.GREEN + 'Please get back to work!')
+
+
 def score_screen():
     print(Col.YELLOW + f"Your score is: {score}\n")
+    print(Col.BLUE +
+          '================================================================\n')
+    print(create_player_dict())
     time.sleep(2)
     scoreboard_answer = input(
         Col.YELLOW + "Add score to scoreboard? Y or N\n").lower()
@@ -422,6 +446,3 @@ val.check_player()
 clear_screen()
 score = 0
 home()
-
-# print(val.SCORES_HEADERS[2])
-# val.scoreboard_rows()

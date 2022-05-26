@@ -23,7 +23,6 @@ GSPREAD_CLIENT = gspread.authorize(SCOPED_CREDS)
 SHEET = GSPREAD_CLIENT.open('scoreboard')
 PLAYER_SHEET = SHEET.worksheet('players')
 SCORE_SHEET = SHEET.worksheet('scores')
-SCORES_HEADERS = SCORE_SHEET.row_values(1)
 
 name = ''
 email = ''
@@ -67,7 +66,7 @@ def check_player() -> str:
 
 def get_email():
     """
-    This will ask player to input their email address
+    This will ask player to input their email address.
     """
     global email
     email = input(Col.YELLOW + 'What is your email address?\n ')
@@ -106,7 +105,7 @@ def register_new_player():
 def retrieve_player_name():
     """
     This function will search database for the players email submitted on
-    a previous visit and retrieve their name to greet them
+    a previous visit and retrieve their name to greet them and use the name.
     """
     global name
     global player_name
@@ -127,7 +126,7 @@ def retrieve_player_name():
 
 def player_login():
     """
-    This function will ask player for their name and email in order
+    This function will ask player for their name in order
     to register them for when they return in the future
     """
     global name
@@ -140,9 +139,6 @@ def player_login():
                 or maximum 12 characters"""
             )
 
-        else:
-            return True
-
     except ValueError as e:
         print(Col.RED + f'Invalid name length: {e},\nplease try again.\n')
         time.sleep(1)
@@ -151,9 +147,24 @@ def player_login():
 
     time.sleep(1)
     clear_screen()
-    print(Col.YELLOW + f'\nWelcome {name}\n')
-    register_new_player()
+    print(Col.GREEN + f'Welcome,\n Employee: {name}\n')
     time.sleep(2)
+    print(Col.GREEN +
+          'Please complete your daily mandatory IQ test\n')
+    time.sleep(2)
+    input(Col.GREEN + '\nEnter any key to continue:\n')
+    register_new_player()
+    time.sleep(1)
+
+
+def total_players():  # To do
+    """
+    This functions will loop through each row of the players sheet
+    and add each player to get a sum the total number of players
+    that have visited.
+    """
+    for i in SCORE_SHEET.row_values(i):
+        pass
 
 
 def clear_screen():
