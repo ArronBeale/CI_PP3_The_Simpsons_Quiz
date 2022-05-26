@@ -5,7 +5,7 @@ import time
 import os
 import random
 import validation as val
-from time import sleep
+# from time import sleep
 from datetime import datetime
 from google.oauth2.service_account import Credentials
 from colors import Color as Col
@@ -81,10 +81,10 @@ def main_menu() -> str:
     """
     time.sleep(1)
     print(Col.YELLOW + 'Please choose an option:')
-    menu_options = '1) Play\n2) Scoreboard\n3) How to play\n\n'
+    menu_options = '1) Play\n2) Scoreboard\n3) How to play\n4) Stats\n'
     menu_options_selected = input(menu_options)
 
-    while menu_options_selected not in ('1', '2', '3'):
+    while menu_options_selected not in ('1', '2', '3', '4'):
         print(Col.YELLOW + 'Please select option 1, 2 or 3')
         menu_options_selected = input(menu_options)
 
@@ -107,6 +107,10 @@ def main_menu() -> str:
         clear_screen()
         time.sleep(1)
         how_to_play()
+
+    elif menu_options_selected == '4':
+        clear_screen()
+        time.sleep(1)
 
     return menu_options_selected
 
@@ -187,22 +191,33 @@ def create_player_dict():
         'Email': val.email
     }
     print(Col.GREEN + 'Employee: ' + player_dict['Name'])
-    time.sleep(1)
+    time.sleep(2)
     print(Col.GREEN + 'Score: ' + player_dict['Score'])
-    time.sleep(1)
+    time.sleep(2)
     print(Col.GREEN + 'Email: ' + player_dict['Email'])
-    time.sleep(1)
+    time.sleep(2)
     print(Col.GREEN + 'Work Email: ' + player_dict['Name'] +
           '@SpringfieldNuclear.com\n')
-    time.sleep(1)
+    time.sleep(2)
     print(Col.GREEN +
-          'Congratulations, your employment has not been terminated\n')
-    time.sleep(1)
+          'Congratulations,\nyour employment has not been terminated\n')
+    time.sleep(2)
     print(Col.GREEN + 'Please get back to work!')
+    time.sleep(2)
+    return
 
 
 def score_screen():
-    print(Col.YELLOW + f"Your score is: {score}\n")
+    print(Col.GREEN + "Validating employee results")
+    clear_screen()
+    time.sleep(1)
+    print(Col.GREEN + "Validating employee results.")
+    clear_screen()
+    time.sleep(1)
+    print(Col.GREEN + "Validating employee results..")
+    clear_screen()
+    time.sleep(1)
+    print(Col.GREEN + "Validating employee results...")
     print(Col.BLUE +
           '================================================================\n')
     print(create_player_dict())

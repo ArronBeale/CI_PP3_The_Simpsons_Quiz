@@ -112,8 +112,14 @@ def retrieve_player_name():
     try:
         player_email_row = PLAYER_SHEET.find(email).row
         player_name = PLAYER_SHEET.row_values(player_email_row)[0]
-        print(f'\nWelcome back {player_name}')
+        clear_screen()
+        print(Col.GREEN + f'Welcome,\nEmployee: {player_name}\n')
         time.sleep(2)
+        print(Col.GREEN +
+              'Please complete your daily mandatory IQ test\n')
+        time.sleep(2)
+        input(Col.GREEN + '\nEnter any key to continue:\n')
+        time.sleep(1)
 
         name = player_name
         return player_name
@@ -147,7 +153,7 @@ def player_login():
 
     time.sleep(1)
     clear_screen()
-    print(Col.GREEN + f'Welcome,\n Employee: {name}\n')
+    print(Col.GREEN + f'Welcome,\nEmployee: {name}\n')
     time.sleep(2)
     print(Col.GREEN +
           'Please complete your daily mandatory IQ test\n')
@@ -159,7 +165,7 @@ def player_login():
 
 def total_players():  # To do
     """
-    This functions will loop through each row of the players sheet
+    This functions will loop through each column of the players sheet
     and add each player to get a sum the total number of players
     that have visited.
     """
