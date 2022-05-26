@@ -202,7 +202,7 @@ def create_player_dict():
     print(Col.GREEN +
           'Congratulations,\nyour employment has not been terminated\n')
     time.sleep(2)
-    print(Col.GREEN + 'Please get back to work!')
+    return Col.GREEN + 'Please get back to work!\n'
     time.sleep(2)
     return
 
@@ -220,6 +220,7 @@ def score_screen():
     print(Col.GREEN + "Validating employee results...")
     print(Col.BLUE +
           '================================================================\n')
+    time.sleep(1)
     print(create_player_dict())
     time.sleep(2)
     scoreboard_answer = input(
