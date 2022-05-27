@@ -169,8 +169,12 @@ def total_players():  # To do
     and add each player to get a sum the total number of players
     that have visited.
     """
-    for i in SCORE_SHEET.row_values(i):
-        pass
+    player_list = PLAYER_SHEET.col_values(1)
+    total_players = 0
+    x = 1
+    for x in player_list:
+        total_players += 1
+    print(total_players)
 
 
 def clear_screen():

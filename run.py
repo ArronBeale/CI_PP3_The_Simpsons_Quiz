@@ -111,6 +111,11 @@ def main_menu() -> str:
     elif menu_options_selected == '4':
         clear_screen()
         time.sleep(1)
+        logo()
+        time.sleep()
+        print(Col.GREEN + 'Statistics:\n')
+        time.sleep(1)
+        print(val.total_players())
 
     return menu_options_selected
 
@@ -182,6 +187,10 @@ Please use: 1, 2 or 3 for your answer\n""")
     time.sleep(1)
     clear_screen()
     score_screen()
+
+#  The below function will create a dictionary of the player
+#  that will be used after the finish the quiz.
+#  It will display all their information including their score.
 
 
 def create_player_dict():
@@ -458,7 +467,8 @@ questions = [
 
 ]
 
-val.check_player()
-clear_screen()
+# val.check_player()
+# clear_screen()
 score = 0
 home()
+# val.total_players()
