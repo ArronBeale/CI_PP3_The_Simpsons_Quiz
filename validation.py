@@ -72,7 +72,7 @@ def get_email():
     email = input(Col.YELLOW + 'What is your email address?\n ')
     time.sleep(1)
     validate_player_email(email)
-    return email
+    return email, True
 
 
 def validate_player_email(email: str):
@@ -122,8 +122,9 @@ def retrieve_player_name():
         time.sleep(1)
 
         name = player_name
-        return player_name
+        return player_name, True
         return name
+
     except AttributeError:
         print('\nEmail not found in past player records, adding now')
         time.sleep(3)
@@ -163,7 +164,7 @@ def player_login():
     time.sleep(1)
 
 
-def total_players():  # To do
+def total_players():
     """
     This functions will loop through each column of the players sheet
     and add each player to get a sum the total number of players
@@ -174,7 +175,7 @@ def total_players():  # To do
     x = 1
     for x in player_list:
         total_players += 1
-    return total_players
+    return total_players, True
 
 
 def clear_screen():
