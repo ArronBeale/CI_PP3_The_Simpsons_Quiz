@@ -174,7 +174,7 @@ def total_players():  # To do
     x = 1
     for x in player_list:
         total_players += 1
-    print(total_players)
+    return total_players
 
 
 def clear_screen():

@@ -111,21 +111,23 @@ def main_menu() -> str:
     elif menu_options_selected == '4':
         clear_screen()
         time.sleep(1)
-        logo()
-        time.sleep()
-        print(Col.GREEN + 'Statistics:\n')
-        time.sleep(1)
-        print(val.total_players())
+        display_stats()
 
     return menu_options_selected
 
+
+#  The below function is the how to play screen, option 3 of
+#  the main menu. It will explain how to play the quiz
+#  and contains the layout for the screen.
 
 def how_to_play():
     """
     This will display instructions on how to play to the player
     and then allow them to exit back to the main menu
     """
-    print(Col.YELLOW + 'Employee: {name}\n'.format(name=val.name))
+    print(Col.YELLOW + 'Employee: {name}'.format(name=val.name))
+    print(Col.BLUE +
+          '================================================================\n')
     print(Col.GREEN + 'How to Play:\n')
     time.sleep(2)
     print(Col.GREEN + 'The quiz will ask you ten (10) questions...\n')
@@ -148,6 +150,19 @@ scoreboard at the end.\n""")
     time.sleep(2)
     print(Col.GREEN + "D'oH!\n")
 
+    input(Col.YELLOW + 'Enter any key to exit:\n')
+    clear_screen()
+    home()
+
+
+def display_stats():
+    print(Col.YELLOW + 'Employee: {name}'.format(name=val.name))
+    print(Col.BLUE +
+          '================================================================\n')
+    print(Col.GREEN + 'Statistics:\n')
+    time.sleep(2)
+    print(Col.GREEN + f'Total players so far: {val.total_players()}\n')
+    time.sleep(1)
     input(Col.YELLOW + 'Enter any key to exit:\n')
     clear_screen()
     home()
