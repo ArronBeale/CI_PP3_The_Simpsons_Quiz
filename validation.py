@@ -189,7 +189,7 @@ def validating_message():
 def total_players():
     """
     This functions will loop through each column of the players sheet
-    and add each player to get a sum the total number of players
+    and add each player to get a sum the of total number of players
     that have visited.
     """
     player_list = PLAYER_SHEET.col_values(1)
@@ -226,13 +226,28 @@ def total_score():
     return total_players_score
 
 
+def total_players_submit():
+    """
+    This functions will loop through each column of the scores sheet
+    and add each player to get a sum of the total number of players
+    that have submitted to the scoreboard.
+    """
+    player_list = SCORE_SHEET.col_values(1)
+    total_player_submitted = 0
+    x = 1
+    for x in player_list:
+        total_player_submitted += 1
+
+    return total_player_submitted
+
+
 def average_score():
     """
     This will calculate the avergae score of all
     the players who have played so far.
     it will exclude the Easter eggs scores of Mr Burns and Homer.
     """
-    return int(total_score() / total_players())
+    return int(total_score() / total_players_submit())
 
 
 def clear_screen():
