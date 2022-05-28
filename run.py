@@ -163,6 +163,9 @@ def display_stats():
     time.sleep(2)
     print(Col.GREEN + f'Total players so far: {val.total_players()}\n')
     time.sleep(1)
+    print(Col.GREEN + f'Total players score combined: {val.total_score()}\n')
+    time.sleep(1)
+    
     input(Col.YELLOW + 'Enter any key to exit:\n')
     clear_screen()
     home()

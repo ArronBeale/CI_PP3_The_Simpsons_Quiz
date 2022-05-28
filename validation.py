@@ -185,6 +185,7 @@ def validating_message():
           '================================================================\n')
     time.sleep(1)
 
+
 def total_players():
     """
     This functions will loop through each column of the players sheet
@@ -199,7 +200,30 @@ def total_players():
     return total_players
 
 
-#  Add total score function
+def total_score():
+    """
+    This function will calculate the total combined score of all player scores
+    that have been recorded in the scores database.
+    It will deduct Mr Burns score of 9999, and add 100 as Homers score is -100, these scores are
+    easter eggs that should be not be included in the final total.
+    """
+    score_column = SCORE_SHEET.col_values(2)
+    total_players_score = 0
+
+    del score_column[0]
+    score_column = list(map(int, score_column))
+
+    for score in score_column:
+        total_players_score += score
+
+    #  This removes Mr Burns score of 9999 from final number
+    total_players_score -= 9999
+
+    #  This adds 100 to compensate for Homers' score of -100
+    total_players_score += 100
+
+    return total_players_score
+
 
 def clear_screen():
     """
