@@ -175,8 +175,10 @@ def total_players():
     x = 1
     for x in player_list:
         total_players += 1
-    return total_players, True
+    return total_players
 
+
+#  Add total score function
 
 def clear_screen():
     """

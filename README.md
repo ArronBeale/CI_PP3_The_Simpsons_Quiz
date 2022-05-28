@@ -189,7 +189,7 @@ You can clone the repository by following these steps:
 
 [Back to Top](<#table-of-content>)
 ## Credits
-- 
+- Favicon: <a href="https://www.flaticon.com/free-icons/nuclear" title="nuclear icons">Nuclear icons created by Freepik - Flaticon</a>
 
 ### Media
 - 
