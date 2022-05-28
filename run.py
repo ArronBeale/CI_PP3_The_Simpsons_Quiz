@@ -232,19 +232,7 @@ def create_player_dict():
 
 
 def score_screen():
-    print(Col.GREEN + "Validating employee results")
-    clear_screen()
-    time.sleep(1)
-    print(Col.GREEN + "Validating employee results.")
-    clear_screen()
-    time.sleep(1)
-    print(Col.GREEN + "Validating employee results..")
-    clear_screen()
-    time.sleep(1)
-    print(Col.GREEN + "Validating employee results...")
-    print(Col.BLUE +
-          '================================================================\n')
-    time.sleep(1)
+    val.validating_message()
     print(create_player_dict())
     time.sleep(2)
     scoreboard_answer = input(
@@ -482,8 +470,7 @@ questions = [
 
 ]
 
-# val.check_player()
-# clear_screen()
+val.check_player()
+clear_screen()
 score = 0
 home()
-# val.total_players()

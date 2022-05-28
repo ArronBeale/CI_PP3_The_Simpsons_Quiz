@@ -164,6 +164,27 @@ def player_login():
     time.sleep(1)
 
 
+def validating_message():
+    print(Col.GREEN + "Validating employee results")
+    print(Col.BLUE +
+          '================================================================\n')
+    time.sleep(1)
+    clear_screen()
+    print(Col.GREEN + "Validating employee results.")
+    print(Col.BLUE +
+          '================================================================\n')
+    time.sleep(1)
+    clear_screen()
+    print(Col.GREEN + "Validating employee results..")
+    print(Col.BLUE +
+          '================================================================\n')
+    time.sleep(1)
+    clear_screen()
+    print(Col.GREEN + "Validating employee results...")
+    print(Col.BLUE +
+          '================================================================\n')
+    time.sleep(1)
+
 def total_players():
     """
     This functions will loop through each column of the players sheet
