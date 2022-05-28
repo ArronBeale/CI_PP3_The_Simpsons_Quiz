@@ -14,12 +14,17 @@
     <title>The Simpsons Quiz</title>
     <style>
         body {
-            display: flex;
-            flex-direction: column;
-            align-content: center;
-            align-items: center;
-            background-image: url(/assets/images/background.jpg);
-            background-attachment: fixed;
+            font-family: arial;
+        }
+
+        #background {
+            background-image: url("https://raw.githubusercontent.com/ArronBeale/CI_PP3_The_Simpsons_Quiz/main/assets/images/background.jpg");;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: -10;
+            height: 100vh;
+            width: 100%;
         }
 
         /**
