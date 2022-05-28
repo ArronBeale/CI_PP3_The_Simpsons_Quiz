@@ -204,8 +204,9 @@ def total_score():
     """
     This function will calculate the total combined score of all player scores
     that have been recorded in the scores database.
-    It will deduct Mr Burns score of 9999, and add 100 as Homers score is -100, these scores are
-    easter eggs that should be not be included in the final total.
+    It will deduct Mr Burns score of 9999, and add 100 as Homers score is -100,
+    these scores are easter eggs that should be not be included in the final
+    total.
     """
     score_column = SCORE_SHEET.col_values(2)
     total_players_score = 0
@@ -223,6 +224,15 @@ def total_score():
     total_players_score += 100
 
     return total_players_score
+
+
+def average_score():
+    """
+    This will calculate the avergae score of all
+    the players who have played so far.
+    it will exclude the Easter eggs scores of Mr Burns and Homer.
+    """
+    return int(total_score() / total_players())
 
 
 def clear_screen():
