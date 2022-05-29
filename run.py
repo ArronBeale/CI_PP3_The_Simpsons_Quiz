@@ -229,15 +229,42 @@ def create_player_dict():
     print(Col.GREEN + 'Work Email: ' + player_dict['Name'] +
           '@SpringfieldNuclear.com\n')
     time.sleep(2)
+    print(Col.BLUE +
+          '================================================================\n')
+    time.sleep(2)
     print(Col.GREEN +
-          'Congratulations,\nyour employment has not been terminated\n')
+          f'Congratulations {create_player_one_object()},')
+    print(Col.GREEN + '\nyour employment has not been terminated\n')
     time.sleep(2)
     return Col.GREEN + 'Please get back to work!\n'
     time.sleep(2)
     return
 
 
+class Player:
+    """
+    Creates a class of Player
+    """
+
+    def __init__(self, name, email, score):
+        self.name = val.name
+        self.email = val.email
+        self.score = score
+
+
+def create_player_one_object():
+    """
+    Creates an object named player one using their name, email and score
+    """
+    player_one = Player(val.name, val.email, score)
+    return player_one.name
+
+
 def score_screen():
+    """
+    Displays options after quiz for player to
+    choose to submit score or return to main menu.
+    """
     val.validating_message()
     print(create_player_dict())
     time.sleep(2)

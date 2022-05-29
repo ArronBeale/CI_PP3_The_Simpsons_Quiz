@@ -164,11 +164,22 @@ def player_login():
     time.sleep(1)
 
 
-class Player:
-    def __init__(self, name, email, score):
-        self.name = name
-        self.email = email
-        self.score = score
+# class Player:
+#     """
+#     Creates an instance of Player
+#     """
+#     def __init__(self, name, email, score):
+#         self.name = name
+#         self.email = email
+#         self.score = score
+
+
+# def create_player_one_object():
+#     """
+#     Creates an object named player one using their name, email and score
+#     """
+#     player_one = Player(name, email,score)
+#     return player_one
 
 
 def validating_message():
