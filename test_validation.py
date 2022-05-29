@@ -23,6 +23,9 @@ class Test_stats(unittest.TestCase):
     def test_total_score(self):
         self.assertNotEqual(val.total_score(), 0)
 
+    def test_average_score(self):
+        self.assertNotEqual(val.total_score(), 0)
+
 
 if __name__ == '__main__':
     unittest.main()
