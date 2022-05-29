@@ -4,7 +4,7 @@ Developer: Arron Beale
 
 <!-- ![responsive display image]() -->
 [Deployed Site](https://the-simpsons-quiz.herokuapp.com/)
-Note: Ctrl + click to open in a new tap
+(Note: Ctrl + click to open in a new tab)
 
 ## Table of Content
 1. [Project Goals](#project-goals)

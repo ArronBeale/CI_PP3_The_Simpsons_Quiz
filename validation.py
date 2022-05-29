@@ -164,6 +164,13 @@ def player_login():
     time.sleep(1)
 
 
+class Player:
+    def __init__(self, name, email, score):
+        self.name = name
+        self.email = email
+        self.score = score
+
+
 def validating_message():
     print(Col.GREEN + "Validating employee results")
     print(Col.BLUE +

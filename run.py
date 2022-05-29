@@ -208,12 +208,13 @@ Please use: 1, 2 or 3 for your answer\n""")
     clear_screen()
     score_screen()
 
-#  The below function will create a dictionary of the player
-#  that will be used after the finish the quiz.
-#  It will display all their information including their score.
-
 
 def create_player_dict():
+    """
+     This function will create a dictionary of the player
+     that will be used after the finish the quiz.
+     It will display all their information including their score.
+    """
     player_dict = {
         'Name': val.name,
         'Score': str(score),
