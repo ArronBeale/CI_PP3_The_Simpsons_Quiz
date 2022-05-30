@@ -273,6 +273,8 @@ def score_screen():
 
     if scoreboard_answer == 'y':
         time.sleep(1)
+        clear_screen()
+        time.sleep(1)
         update_scoreboard()
         return True
 
