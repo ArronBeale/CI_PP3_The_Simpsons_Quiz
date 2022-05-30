@@ -62,6 +62,39 @@ anyone who is a fan of the show and from ages 10 years and older.
 - Name is remembered on next visit
 - Ability to view a scoreboard of past players
 
+### Manual
+<details><summary>Click here to view manual</summary>
+ <!-- Work in progress -->
+
+ #### Player Validation
+ - Upon running the game the player will be asked if they have played before. New  players will be registered into the players database using their submitted email and name.
+ Returning players will be asked for their email address and their name will be taken from the Players Database to greet them.
+
+ #### Main Menu
+ - The Main Menu consists of 4 options to choose from:
+   1) Play
+   2) Scoreboard
+   3) How to Play
+   4) Stats
+- Choose an option using numbers 1, 2, 3 and 4
+
+#### Play
+ -
+
+
+#### Scoreboard
+ -
+
+#### How to Play
+ -
+
+#### Stats
+ -
+ 
+
+ </details>
+ 
+
 ### User Stories
 
 ### First Time User
