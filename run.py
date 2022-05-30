@@ -241,8 +241,6 @@ def create_player_dict():
     print(Col.GREEN + '\nyour employment has not been terminated\n')
     time.sleep(2)
     return Col.GREEN + 'Please get back to work!\n'
-    time.sleep(2)
-    return
 
 
 class Player:
