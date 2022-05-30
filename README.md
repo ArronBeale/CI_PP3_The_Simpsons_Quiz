@@ -118,6 +118,8 @@ anyone who is a fan of the show and from ages 10 years and older.
 ### Frameworks and Tools
 - [Balsamiq](https://balsamiq.com/)
 
+- [FlatIcon](https://www.flaticon.com/)
+
 - [GitPod](https://gitpod.io/)
 
 - [Git](https://git-scm.com/)
