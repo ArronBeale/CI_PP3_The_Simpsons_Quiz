@@ -164,6 +164,10 @@ def player_login():
 
 
 def validating_message():
+    """
+    Displays the message that validation of players
+    score is in progress.
+    """
     print(Col.GREEN + "Validating employee results")
     print(Col.BLUE +
           '================================================================\n')
