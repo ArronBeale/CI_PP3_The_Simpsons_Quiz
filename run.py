@@ -5,7 +5,6 @@ import time
 import os
 import random
 import validation as val
-# from time import sleep
 from datetime import datetime
 from google.oauth2.service_account import Credentials
 from colors import Color as Col
@@ -156,6 +155,11 @@ scoreboard at the end.\n""")
 
 
 def display_stats():
+    """
+    Displays all statistics to the terminal for the player to view,
+    total players so far, total score of all players, average score
+    of all players
+    """
     print(Col.YELLOW + 'Employee: {name}'.format(name=val.name))
     print(Col.BLUE +
           '================================================================\n')
