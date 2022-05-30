@@ -149,8 +149,127 @@ anyone who is a fan of the show and from ages 10 years and older.
 
 ## Features
 
+### Quiz
+- 
+- 
+- User stories covered:
+<details><summary>Quiz image</summary>
+<img src="https://raw.githubusercontent.com/ArronBeale/CI_PP3_The_Simpsons_Quiz/main/docs/features/feature_quiz.PNG">
+</details>
 
+### Validate New Player
+- 
+- 
+- User stories covered:
+<details><summary>Validate New Player Image</summary>
+<img src="https://raw.githubusercontent.com/ArronBeale/CI_PP3_The_Simpsons_Quiz/main/docs/features/feature_validate_new_player.PNG">
+</details>
 
+### Validate returning Player
+- 
+- 
+- User stories covered:
+<details><summary>Validate returning Player Image
+</summary>
+<img src="https://raw.githubusercontent.com/ArronBeale/CI_PP3_The_Simpsons_Quiz/main/docs/features/feature_validate_returning_player.PNG">
+</details>
+
+### Validate and Greet Name
+- 
+- 
+- User stories covered:
+<details><summary>Validate and Greet Name Image</summary>
+<img src="https://raw.githubusercontent.com/ArronBeale/CI_PP3_The_Simpsons_Quiz/main/docs/features/feature_validate_greet_name.PNG">
+</details>
+
+### Main Menu
+- 
+- 
+- User stories covered:
+<details><summary>Main Menu Image</summary>
+<img src="https://raw.githubusercontent.com/ArronBeale/CI_PP3_The_Simpsons_Quiz/main/docs/features/feature_main_menu.PNG">
+<img src="https://raw.githubusercontent.com/ArronBeale/CI_PP3_The_Simpsons_Quiz/main/docs/features/feature_main_menu2.PNG">
+</details>
+
+### Logo
+- 
+- 
+- User stories covered:
+<details><summary>Logo Image</summary>
+<img src="https://raw.githubusercontent.com/ArronBeale/CI_PP3_The_Simpsons_Quiz/main/docs/features/feature_main_menu.PNG">
+</details>
+
+### How to Play
+- 
+- 
+- User stories covered:
+<details><summary>User stories covered</summary>
+<img src="https://raw.githubusercontent.com/ArronBeale/CI_PP3_The_Simpsons_Quiz/main/docs/features/feature_how_to_play.PNG">
+</details>
+
+### Scoreboard
+- 
+- 
+- User stories covered:
+<details><summary>Scoreboard Image</summary>
+<img src="https://raw.githubusercontent.com/ArronBeale/CI_PP3_The_Simpsons_Quiz/main/docs/features/feature_scoreboard.PNG">
+</details>
+
+### Add to Scoreboard
+- 
+- 
+- User stories covered:
+<details><summary>Add to Scoreboard Image</summary>
+<img src="https://raw.githubusercontent.com/ArronBeale/CI_PP3_The_Simpsons_Quiz/main/docs/features/feature_add_to_scoreboard.PNG">
+</details>
+
+### Player Database
+- 
+- 
+- User stories covered:
+<details><summary>Players Database Image</summary>
+<img src="https://raw.githubusercontent.com/ArronBeale/CI_PP3_The_Simpsons_Quiz/main/docs/features/feature_player_database.PNG">
+</details>
+
+### Scoreboard Database
+- 
+- 
+- User stories covered:
+<details><summary>Scoreboard Database Image</summary>
+<img src="https://raw.githubusercontent.com/ArronBeale/CI_PP3_The_Simpsons_Quiz/main/docs/features/feature_scoreboard_database.PNG">
+</details>
+
+### Results
+- 
+- 
+- User stories covered:
+<details><summary>Results Image</summary>
+<img src="https://raw.githubusercontent.com/ArronBeale/CI_PP3_The_Simpsons_Quiz/main/docs/features/feature_results.PNG">
+</details>
+
+### Stats
+- 
+- 
+- User stories covered:
+<details><summary>Stats Image</summary>
+<img src="https://raw.githubusercontent.com/ArronBeale/CI_PP3_The_Simpsons_Quiz/main/docs/features/feature_stats.PNG">
+</details>
+
+### Scores Database
+- 
+- 
+- User stories covered:
+<details><summary>Scores Database Image</summary>
+<img src="https://raw.githubusercontent.com/ArronBeale/CI_PP3_The_Simpsons_Quiz/main/docs/features/feature_quiz.PNG">
+</details>
+
+### Stats
+- 
+- 
+- User stories covered:
+<details><summary>Stats Image</summary>
+<img src="https://raw.githubusercontent.com/ArronBeale/CI_PP3_The_Simpsons_Quiz/main/docs/features/feature_quiz.PNG">
+</details>
 
 [Back to Top](<#table-of-content>)
 ## Validation
