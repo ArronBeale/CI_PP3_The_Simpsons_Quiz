@@ -143,7 +143,7 @@ anyone who is a fan of the show and from ages 10 years and older.
 
 #### Third Party Libraries
 - [Gspread](https://docs.gspread.org/en/v5.3.2/)
-  - Justification: Used to work with Google Sheets data to record scores and emails of players
+  - Justification: Used to work with Google Sheets data to record scores and emails of players.
 - [Email validator](https://pypi.org/project/email-validator/)
   - Justification: Used to ensure email addresses provided were valid and had the correct format required.
 - [Google Auth](https://google-auth.readthedocs.io/en/master/)
@@ -255,22 +255,6 @@ anyone who is a fan of the show and from ages 10 years and older.
 - User stories covered:
 <details><summary>Stats Image</summary>
 <img src="https://raw.githubusercontent.com/ArronBeale/CI_PP3_The_Simpsons_Quiz/main/docs/features/feature_stats.PNG">
-</details>
-
-### Scores Database
-- 
-- 
-- User stories covered:
-<details><summary>Scores Database Image</summary>
-<img src="https://raw.githubusercontent.com/ArronBeale/CI_PP3_The_Simpsons_Quiz/main/docs/features/feature_quiz.PNG">
-</details>
-
-### Stats
-- 
-- 
-- User stories covered:
-<details><summary>Stats Image</summary>
-<img src="https://raw.githubusercontent.com/ArronBeale/CI_PP3_The_Simpsons_Quiz/main/docs/features/feature_quiz.PNG">
 </details>
 
 [Back to Top](<#table-of-content>)
