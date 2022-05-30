@@ -74,6 +74,8 @@ def get_email():
     validate_player_email(email)
     return email, True
 
+#  The below function uses code from the email_validator library
+
 
 def validate_player_email(email: str):
     """

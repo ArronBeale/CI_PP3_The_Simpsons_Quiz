@@ -3,7 +3,7 @@ This project is currently a work in progress
 Developer: Arron Beale
 
 <!-- ![responsive display image]() -->
-[Deployed Site](https://the-simpsons-quiz.herokuapp.com/)
+[Deployed Site](https://the-simpsons-quiz.herokuapp.com/)  
 (Note: Ctrl + click to open in a new tab)
 
 ## Table of Content
