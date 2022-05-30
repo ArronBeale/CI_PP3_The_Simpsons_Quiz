@@ -128,6 +128,25 @@ anyone who is a fan of the show and from ages 10 years and older.
 
 [Back to Top](<#Table-of-Content>)
 
+### Libraries
+
+#### Python Libraries
+- [OS](https://docs.python.org/3/library/os.html)
+- [Random](https://docs.python.org/3/library/random.html)
+- [PyColors](https://pypi.org/project/pycolors/)
+- [Date time](https://docs.python.org/3/library/datetime.html)
+- [Tabluate](https://pypi.org/project/tabulate/)
+- [Time](https://docs.python.org/3/library/time.html)
+- [Unittest](https://docs.python.org/3/library/unittest.html)
+
+#### Third Party Libraries
+- [Gspread](https://docs.gspread.org/en/v5.3.2/)
+  - Justification: Used to work with Google Sheets data to record scores and emails of players
+- [Email validator](https://pypi.org/project/email-validator/)
+  - Justification: Used to ensure email addresses provided were valid and had the correct format required.
+- [Google Auth](https://google-auth.readthedocs.io/en/master/)
+  - Justification: Used to link the Google API in order to be authorised to access and edit the Google Sheets.
+
 ## Features
 
 
