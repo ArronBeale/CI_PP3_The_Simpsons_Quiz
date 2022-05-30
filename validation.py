@@ -123,7 +123,6 @@ def retrieve_player_name():
 
         name = player_name
         return player_name, True
-        return name
 
     except AttributeError:
         print('\nEmail not found in past player records, adding now')
