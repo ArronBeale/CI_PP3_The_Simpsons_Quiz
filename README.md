@@ -309,6 +309,7 @@ anyone who is a fan of the show and from ages 10 years and older.
 
 ### Testing
 <!-- work in progress -->
+
 #### Testing User Stories
 First Time User:
 1. 
@@ -317,6 +318,10 @@ First Time User:
 |-------------|------------|---------------------|-------------------|
 | | | | |
 | | | | |
+<details><summary>Images</summary>
+<img src="">
+<img src="">
+</details>
 
 2. 
 
@@ -324,6 +329,10 @@ First Time User:
 |-------------|------------|---------------------|-------------------|
 | | | | |
 | | | | |
+<details><summary>Images</summary>
+<img src="">
+<img src="">
+</details>
 
 3. 
 
@@ -331,6 +340,10 @@ First Time User:
 |-------------|------------|---------------------|-------------------|
 | | | | |
 | | | | |
+<details><summary>Images</summary>
+<img src="">
+<img src="">
+</details>
 
 4. 
 
@@ -338,6 +351,10 @@ First Time User:
 |-------------|------------|---------------------|-------------------|
 | | | | |
 | | | | |
+<details><summary>Images</summary>
+<img src="">
+<img src="">
+</details>
 
 5. 
 
@@ -345,6 +362,10 @@ First Time User:
 |-------------|------------|---------------------|-------------------|
 | | | | |
 | | | | |
+<details><summary>Images</summary>
+<img src="">
+<img src="">
+</details>
 
 Returning User
 6. 
@@ -353,6 +374,10 @@ Returning User
 |-------------|------------|---------------------|-------------------|
 | | | | |
 | | | | |
+<details><summary>Images</summary>
+<img src="">
+<img src="">
+</details>
 
 7. 
 
@@ -360,6 +385,10 @@ Returning User
 |-------------|------------|---------------------|-------------------|
 | | | | |
 | | | | |
+<details><summary>Images</summary>
+<img src="">
+<img src="">
+</details>
 
 Site Owner
 8. 
@@ -368,6 +397,10 @@ Site Owner
 |-------------|------------|---------------------|-------------------|
 | | | | |
 | | | | |
+<details><summary>Images</summary>
+<img src="">
+<img src="">
+</details>
 
 9. 
 
@@ -375,6 +408,10 @@ Site Owner
 |-------------|------------|---------------------|-------------------|
 | | | | |
 | | | | |
+<details><summary>Images</summary>
+<img src="">
+<img src="">
+</details>
 
 10. 
 
@@ -382,6 +419,10 @@ Site Owner
 |-------------|------------|---------------------|-------------------|
 | | | | |
 | | | | |
+<details><summary>Images</summary>
+<img src="">
+<img src="">
+</details>
 
 11. 
 
@@ -389,6 +430,10 @@ Site Owner
 |-------------|------------|---------------------|-------------------|
 | | | | |
 | | | | |
+<details><summary>Images</summary>
+<img src="">
+<img src="">
+</details>
 
 12. 
 
@@ -396,6 +441,10 @@ Site Owner
 |-------------|------------|---------------------|-------------------|
 | | | | |
 | | | | |
+<details><summary>Images</summary>
+<img src="">
+<img src="">
+</details>
 
 13. 
 
@@ -403,8 +452,6 @@ Site Owner
 |-------------|------------|---------------------|-------------------|
 | | | | |
 | | | | |
-
-
 <details><summary>Images</summary>
 <img src="">
 <img src="">
