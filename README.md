@@ -110,11 +110,11 @@ anyone who is a fan of the show and from ages 10 years and older.
  
 ### Site Owner
 8. As the site owner, I would like the game to be challenging and fun.
-13. As the site owner, I would like an eye catching logo
-14. As the site owner, I would like some humor on the main menu
-15. As the site owner, I would like valid data from the player especially correct email formats
-16. As the site owner, I would like a database of player scores, names and emails
-17. As the site owner, i would like to give the option for a player to submit their score or not
+9. As the site owner, I would like an eye catching logo
+10. As the site owner, I would like some humor on the main menu
+11. As the site owner, I would like valid data from the player especially correct email formats
+12. As the site owner, I would like a database of player scores, names and emails
+13. As the site owner, i would like to give the option for a player to submit their score or not
  
 [Back to Top](<#table-of-content>)
 ## Technical Design
@@ -309,25 +309,113 @@ anyone who is a fan of the show and from ages 10 years and older.
 
 ### Testing
 <!-- work in progress -->
-### Manual Testing
-<!-- work in progress -->
-### Automatic Testing
-
-[Back to Top](<#table-of-content>)
-
-### Testing User Stories
+#### Testing User Stories
 First Time User:
 1. 
 
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
-| | | |  |
 | | | | |
+| | | | |
+
+2. 
+
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|-------------|------------|---------------------|-------------------|
+| | | | |
+| | | | |
+
+3. 
+
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|-------------|------------|---------------------|-------------------|
+| | | | |
+| | | | |
+
+4. 
+
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|-------------|------------|---------------------|-------------------|
+| | | | |
+| | | | |
+
+5. 
+
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|-------------|------------|---------------------|-------------------|
+| | | | |
+| | | | |
+
+Returning User
+6. 
+
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|-------------|------------|---------------------|-------------------|
+| | | | |
+| | | | |
+
+7. 
+
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|-------------|------------|---------------------|-------------------|
+| | | | |
+| | | | |
+
+Site Owner
+8. 
+
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|-------------|------------|---------------------|-------------------|
+| | | | |
+| | | | |
+
+9. 
+
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|-------------|------------|---------------------|-------------------|
+| | | | |
+| | | | |
+
+10. 
+
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|-------------|------------|---------------------|-------------------|
+| | | | |
+| | | | |
+
+11. 
+
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|-------------|------------|---------------------|-------------------|
+| | | | |
+| | | | |
+
+12. 
+
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|-------------|------------|---------------------|-------------------|
+| | | | |
+| | | | |
+
+13. 
+
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|-------------|------------|---------------------|-------------------|
+| | | | |
+| | | | |
+
 
 <details><summary>Images</summary>
 <img src="">
 <img src="">
 </details>
+### Manual Testing
+<!-- work in progress -->
+### Automatic Testing
+
+
+
+
 
 [Back to Top](<#table-of-content>)
 ## Bugs
