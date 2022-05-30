@@ -104,7 +104,7 @@ anyone who is a fan of the show and from ages 10 years and older.
 ### Wireframes
 
 <details><summary>Home</summary>
-<img src="">
+<img src="https://raw.githubusercontent.com/ArronBeale/CI_PP3_The_Simpsons_Quiz/main/docs/wireframes/wireframe-main.png">
 </details>
 
    
@@ -112,9 +112,8 @@ anyone who is a fan of the show and from ages 10 years and older.
 ## Technologies Used
 
 ### Languages
-- HTML
-- CSS
-- JavaScript
+- [Python](https://www.python.org/)
+
 
 ### Frameworks and Tools
 - [Balsamiq](https://balsamiq.com/)
@@ -125,9 +124,7 @@ anyone who is a fan of the show and from ages 10 years and older.
 
 - [GitHub](https://github.com/)
 
-- [Google Fonts](https://fonts.google.com/)
-
-- [Font Awesome](https://fontawesome.com/)
+- [Google Cloud Platform](https://cloud.google.com/cloud-console/)
 
 [Back to Top](<#Table-of-Content>)
 
