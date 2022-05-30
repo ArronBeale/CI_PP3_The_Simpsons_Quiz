@@ -262,8 +262,16 @@ anyone who is a fan of the show and from ages 10 years and older.
 
 
 ### PEP8 Validation
-<details><summary>Home</summary>
-<img src="">
+<details><summary>run.py</summary>
+<img src="https://raw.githubusercontent.com/ArronBeale/CI_PP3_The_Simpsons_Quiz/main/docs/validation/validation_pep8_run.PNG">
+</details>
+
+<details><summary>validation.py</summary>
+<img src="https://raw.githubusercontent.com/ArronBeale/CI_PP3_The_Simpsons_Quiz/main/docs/validation/validation_pep8_validation.PNG">
+</details>
+
+<details><summary>test_validation.py</summary>
+<img src="https://raw.githubusercontent.com/ArronBeale/CI_PP3_The_Simpsons_Quiz/main/docs/validation/validation_pep8_test_validation.PNG">
 </details>
 
 
