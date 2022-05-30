@@ -1,10 +1,12 @@
 # The Simpsons Quiz
-This project is currently a work in progress
-Developer: Arron Beale
 
-<!-- ![responsive display image]() -->
+
+![cover image](https://raw.githubusercontent.com/ArronBeale/CI_PP3_The_Simpsons_Quiz/main/docs/cover.PNG)
+Developer: Arron Beale  
+
 [Deployed Site](https://the-simpsons-quiz.herokuapp.com/)  
-(Note: Ctrl + click to open in a new tab)
+(Note: Ctrl + click to open in a new tab)    
+
 
 ## Table of Content
 1. [Project Goals](#project-goals)
