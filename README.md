@@ -15,7 +15,8 @@ Developer: Arron Beale
 2. [User Experience](#User-Experience)
    1. [Target Audience](#target-audience)
    2. [User Requirements and Expectations](#user-requirments-and-expectations)
-   3. [User Stories](#user-stories)
+   3. [Manual](#manual)
+   4. [User Stories](#user-stories)
 3. [Technical Design](#technical-design)
    1. [Flowcharts](#flowcharts)
    2. [Wireframes](#wireframes)
@@ -64,11 +65,12 @@ anyone who is a fan of the show and from ages 10 years and older.
 
 ### Manual
 <details><summary>Click here to view manual</summary>
- <!-- Work in progress -->
+ 
 
  #### Player Validation
- - Upon running the game the player will be asked if they have played before. New  players will be registered into the players database using their submitted email and name.
- Returning players will be asked for their email address and their name will be taken from the Players Database to greet them.
+ - Upon running the game the player will be asked if they have played before. 
+ - New  players will be registered into the players database using their submitted email and name.
+ - Returning players will be asked for their email address and their name will be taken from the Players Database to greet them.
 
  #### Main Menu
  - The Main Menu consists of 4 options to choose from:
@@ -79,17 +81,19 @@ anyone who is a fan of the show and from ages 10 years and older.
 - Choose an option using numbers 1, 2, 3 and 4
 
 #### Play
- -
+ - From the Main Menu input select option 1 to begin playing. This will begin the quiz. Ten (10) random questions will be asked, ther will be 3 options, one of which will be the correct answer.
+
+ - Upon completion of the quiz the player will be brought to their results screen which will give the final score. The player will be asked to choose to add score the sacore to the scoreboard, Yes (Y) or No (N). After an option is chosen and if the score ahs or has not been added the player will e brought back to the main menu.
 
 
 #### Scoreboard
- -
+ - From the Main Menu select option 2 to view the scoreboard. This will bring the player to the scoreboard screen and display the scores of all past players.
 
 #### How to Play
- -
+ - Fron the Main Menu select option 3 to learn how to play. This will bring the player to the how to play screen, all the information on how to play will be displayed here.
 
 #### Stats
- -
+ - From the Main Menu select option 4, this will bring the player to the stats screen. Here you will find statistics such as, total players so far, total combined score and average score of all players so far.
  
 
  </details>
