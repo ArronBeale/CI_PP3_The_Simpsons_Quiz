@@ -307,9 +307,9 @@ anyone who is a fan of the show and from ages 10 years and older.
 <img src="https://raw.githubusercontent.com/ArronBeale/CI_PP3_The_Simpsons_Quiz/main/docs/validation/validation_pep8_test_validation.PNG">
 </details>
 
-### Testing
+## Testing
 <!-- work in progress -->
-
+### Manual Testing
 #### Testing User Stories
 First Time User:
 1. 
@@ -456,7 +456,7 @@ Site Owner
 <img src="">
 <img src="">
 </details>
-### Manual Testing
+
 <!-- work in progress -->
 ### Automatic Testing
 

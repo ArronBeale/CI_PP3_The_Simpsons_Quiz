@@ -507,6 +507,10 @@ questions = [
 
 ]
 
+print('test __________')
+print('test ==========')
+print('test ----------')
+time.sleep(5)
 val.check_player()
 clear_screen()
 score = 0
