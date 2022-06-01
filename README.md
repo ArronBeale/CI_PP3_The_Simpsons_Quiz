@@ -102,7 +102,7 @@ anyone who is a fan of the show and from ages 10 years and older.
 2. As a player, I would like to have a main menu.
 3. As a player, I would like to register my name and email for future visits.
 4. As a player, I would like to upload my score to a scoreboard.
-5. As a player, I would like to know how to play.
+5. As a player, I would like to see statistics.
 
 ### Returning User
 6. As a returning player, I would like to be remembered.
@@ -308,63 +308,63 @@ anyone who is a fan of the show and from ages 10 years and older.
 </details>
 
 ## Testing
-<!-- work in progress -->
-### Manual Testing
-#### Testing User Stories
+
+### - Manual Testing
+
+### Testing User Stories
+
 First Time User:
 1. As a player, I would like to know how to play.
 
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
-| | | | |
-| | | | |
+| Main Menu | Select option 3 | You are taken to the how to play screen | As expected |
+| How to Play | View displayed information | Information on the how to play screen should be visible | As expected |
 <details><summary>Images</summary>
-<img src="">
-<img src="">
+<img src="https://github.com/ArronBeale/CI_PP3_The_Simpsons_Quiz/blob/main/docs/features/feature_main_menu2.PNG?raw=true">
+<img src="https://github.com/ArronBeale/CI_PP3_The_Simpsons_Quiz/blob/main/docs/features/feature_how_to_play.PNG?raw=true">
 </details>
 
 2. As a player, I would like to have a main menu.
 
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
-| | | | |
-| | | | |
+| Main Menu | Run game and follow prompts which will bring you to main menu | | As expected |
+
 <details><summary>Images</summary>
-<img src="">
-<img src="">
+<img src="https://raw.githubusercontent.com/ArronBeale/CI_PP3_The_Simpsons_Quiz/main/docs/features/feature_main_menu.PNG">
+<img src="https://github.com/ArronBeale/CI_PP3_The_Simpsons_Quiz/blob/main/docs/features/feature_main_menu2.PNG?raw=true">
 </details>
 
 3. As a player, I would like to register my name and email for future visits.
 
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
-| | | | |
-| | | | |
+| Validate New Player | When programme runs select option 1, you have not played before, input email and name when prompted | Name and email will be recorded for future visits| As expected |
+
 <details><summary>Images</summary>
-<img src="">
-<img src="">
+<img src="https://github.com/ArronBeale/CI_PP3_The_Simpsons_Quiz/blob/main/docs/features/feature_validate_new_player.PNG?raw=true">
 </details>
 
 4. As a player, I would like to upload my score to a scoreboard.
 
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
-| | | | |
-| | | | |
+| Add to Scoreboard| When quiz ends, select Yes to upload to the scoreboard | Score will upload to scoreboard | As expected |
+
 <details><summary>Images</summary>
-<img src="">
-<img src="">
+<img src="https://github.com/ArronBeale/CI_PP3_The_Simpsons_Quiz/blob/main/docs/features/feature_add_to_scoreboard.PNG?raw=true">
 </details>
 
-5. As a player, I would like to know how to play.
+5. As a player, I would like to see statistics.
 
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
-| | | | |
-| | | | |
+| Main Menu | From main menu select option 4 | Statistics screen will load | As expected |
+| Stats | From selectiing stats from main menu stats screen will now display statistics | Total players, total score and average score will be displayed| As expected |
 <details><summary>Images</summary>
-<img src="">
-<img src="">
+<img src="https://github.com/ArronBeale/CI_PP3_The_Simpsons_Quiz/blob/main/docs/features/feature_main_menu2.PNG?raw=true">
+<img src="https://github.com/ArronBeale/CI_PP3_The_Simpsons_Quiz/blob/main/docs/features/feature_stats.PNG?raw=true">
 </details>
 
 Returning User
@@ -372,11 +372,12 @@ Returning User
 
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
-| | | | |
-| | | | |
+| Validate Returning Player| When programme runs select option 2, you have played before | Input email when prompted, name will be retrieved from the database | As expected |
+| Validate and Greet Name| After validation player will be greeted by name | Player name will be displayed in a welcome message | As expected |
+
 <details><summary>Images</summary>
-<img src="">
-<img src="">
+<img src="https://github.com/ArronBeale/CI_PP3_The_Simpsons_Quiz/blob/main/docs/features/feature_validate_returning_player.PNG?raw=true">
+<img src="https://github.com/ArronBeale/CI_PP3_The_Simpsons_Quiz/blob/main/docs/features/feature_validate_greet_name.PNG?raw=true">
 </details>
 
 7. As a returning player, I would like to view a scoreboard.
@@ -384,7 +385,7 @@ Returning User
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
 | | | | |
-| | | | |
+
 <details><summary>Images</summary>
 <img src="">
 <img src="">
@@ -396,7 +397,7 @@ Site Owner
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
 | | | | |
-| | | | |
+
 <details><summary>Images</summary>
 <img src="">
 <img src="">
@@ -407,7 +408,7 @@ Site Owner
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
 | | | | |
-| | | | |
+
 <details><summary>Images</summary>
 <img src="">
 <img src="">
@@ -418,7 +419,7 @@ Site Owner
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
 | | | | |
-| | | | |
+
 <details><summary>Images</summary>
 <img src="">
 <img src="">
@@ -429,7 +430,7 @@ Site Owner
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
 | | | | |
-| | | | |
+
 <details><summary>Images</summary>
 <img src="">
 <img src="">
@@ -440,7 +441,7 @@ Site Owner
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
 | | | | |
-| | | | |
+
 <details><summary>Images</summary>
 <img src="">
 <img src="">
@@ -451,7 +452,7 @@ Site Owner
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
 | | | | |
-| | | | |
+
 <details><summary>Images</summary>
 <img src="">
 <img src="">
