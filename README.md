@@ -25,11 +25,7 @@ Developer: Arron Beale
    2. [Frameworks and Tools](#frameworks-and-tools)
 5. [Features](#features)
 6. [Testing](#validation)
-   1. [PEP8 Validation](#pep8-validation)
-   4. [Performance](#performance)
-   5. [Device Testing](#Performing-tests-on-devices)
-   6. [Browser Compatability](#browser-compatability)
-   7. [Testing User Stories](#testing-user-stories)
+7. [PEP8 Validation](#pep8-validation)
 8. [Bugs](#bugs)
 9. [Deployment](#deployment)
 10. [Credits](#credits)
@@ -102,23 +98,23 @@ anyone who is a fan of the show and from ages 10 years and older.
 ### User Stories
 
 ### First Time User
-1. As a player, I would like to know how to play
-2. As a player, I would like to have a main menu
-3. As a player, I would like to register my name and email for future visits
-4. As a player, I would like to upload my score to a scoreboard
-5. As a player, I would like to know how to play
+1. As a player, I would like to know how to play.
+2. As a player, I would like to have a main menu.
+3. As a player, I would like to register my name and email for future visits.
+4. As a player, I would like to upload my score to a scoreboard.
+5. As a player, I would like to know how to play.
 
 ### Returning User
-6. As a returning player, I would like to be remembered
-7. As a returning player, I would like to view a scoreboard
+6. As a returning player, I would like to be remembered.
+7. As a returning player, I would like to view a scoreboard.
  
 ### Site Owner
 8. As the site owner, I would like the game to be challenging and fun.
-9. As the site owner, I would like an eye catching logo
-10. As the site owner, I would like some humor on the main menu
-11. As the site owner, I would like valid data from the player especially correct email formats
-12. As the site owner, I would like a database of player scores, names and emails
-13. As the site owner, i would like to give the option for a player to submit their score or not
+9. As the site owner, I would like an eye catching logo.
+10. As the site owner, I would like some humor on the main menu.
+11. As the site owner, I would like valid data from the player especially correct email formats.
+12. As the site owner, I would like a database of player scores, names and emails.
+13. As the site owner, i would like to give the option for a player to submit their score or not.
  
 [Back to Top](<#table-of-content>)
 ## Technical Design
@@ -316,7 +312,7 @@ anyone who is a fan of the show and from ages 10 years and older.
 ### Manual Testing
 #### Testing User Stories
 First Time User:
-1. 
+1. As a player, I would like to know how to play.
 
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
@@ -327,7 +323,7 @@ First Time User:
 <img src="">
 </details>
 
-2. 
+2. As a player, I would like to have a main menu.
 
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
@@ -338,7 +334,7 @@ First Time User:
 <img src="">
 </details>
 
-3. 
+3. As a player, I would like to register my name and email for future visits.
 
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
@@ -349,7 +345,7 @@ First Time User:
 <img src="">
 </details>
 
-4. 
+4. As a player, I would like to upload my score to a scoreboard.
 
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
@@ -360,7 +356,7 @@ First Time User:
 <img src="">
 </details>
 
-5. 
+5. As a player, I would like to know how to play.
 
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
@@ -372,7 +368,7 @@ First Time User:
 </details>
 
 Returning User
-6. 
+6. As a returning player, I would like to be remembered.
 
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
@@ -383,7 +379,7 @@ Returning User
 <img src="">
 </details>
 
-7. 
+7. As a returning player, I would like to view a scoreboard.
 
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
@@ -395,7 +391,7 @@ Returning User
 </details>
 
 Site Owner
-8. 
+8. As the site owner, I would like the game to be challenging and fun.
 
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
@@ -406,7 +402,7 @@ Site Owner
 <img src="">
 </details>
 
-9. 
+9. As the site owner, I would like an eye catching logo.
 
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
@@ -417,7 +413,7 @@ Site Owner
 <img src="">
 </details>
 
-10. 
+10. As the site owner, I would like some humor on the main menu.
 
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
@@ -428,7 +424,7 @@ Site Owner
 <img src="">
 </details>
 
-11. 
+11. As the site owner, I would like valid data from the player especially correct email formats.
 
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
@@ -439,7 +435,7 @@ Site Owner
 <img src="">
 </details>
 
-12. 
+12. As the site owner, I would like a database of player scores, names and emails.
 
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
@@ -450,7 +446,7 @@ Site Owner
 <img src="">
 </details>
 
-13. 
+13. As the site owner, i would like to give the option for a player to submit their score or not.
 
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|

@@ -115,10 +115,6 @@ def main_menu() -> str:
     return menu_options_selected
 
 
-#  The below function is the how to play screen, option 3 of
-#  the main menu. It will explain how to play the quiz
-#  and contains the layout for the screen.
-
 def how_to_play():
     """
     This will display instructions on how to play to the player
