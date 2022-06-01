@@ -440,22 +440,24 @@ Site Owner
 
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
-| | | | |
+| Player Database | Restricted access due to sensitive information | Database contains Player names and emails | As expected |
+| Scoreboard Database | Restricted access due to sensitive information | Database contains Player scores | As expected |
 
 <details><summary>Images</summary>
-<img src="">
-<img src="">
+<img src="https://github.com/ArronBeale/CI_PP3_The_Simpsons_Quiz/blob/main/docs/features/feature_player_database.PNG?raw=true">
+<img src="https://github.com/ArronBeale/CI_PP3_The_Simpsons_Quiz/blob/main/docs/features/feature_scoreboard_database.PNG?raw=true">
 </details>
 
 13. As the site owner, i would like to give the option for a player to submit their score or not.
 
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
-| | | | |
+| Add to Scoreboard| When quiz ends, select Yes or No to upload to the scoreboard | Score will or will not upload to scoreboard depending on choice | As expected |
+| Scoreboard | After submitting score select option 2 in main menu | Scoreboard will be shown, your score listed | As expected |
 
 <details><summary>Images</summary>
-<img src="">
-<img src="">
+<img src="https://github.com/ArronBeale/CI_PP3_The_Simpsons_Quiz/blob/main/docs/features/feature_add_to_scoreboard.PNG?raw=true">
+<img src="https://github.com/ArronBeale/CI_PP3_The_Simpsons_Quiz/blob/main/docs/features/feature_scoreboard.PNG?raw=true">
 </details>
 
 <!-- work in progress -->
