@@ -351,9 +351,11 @@ First Time User:
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
 | Add to Scoreboard| When quiz ends, select Yes to upload to the scoreboard | Score will upload to scoreboard | As expected |
+| Scoreboard | After submitting score select option 2 in main menu | Scoreboard will be shown, your score listed | As expected |
 
 <details><summary>Images</summary>
 <img src="https://github.com/ArronBeale/CI_PP3_The_Simpsons_Quiz/blob/main/docs/features/feature_add_to_scoreboard.PNG?raw=true">
+<img src="https://github.com/ArronBeale/CI_PP3_The_Simpsons_Quiz/blob/main/docs/features/feature_scoreboard.PNG?raw=true">
 </details>
 
 5. As a player, I would like to see statistics.
