@@ -386,11 +386,10 @@ Returning User
 
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
-| | | | |
+| Scoreboard | From the main menu select option 2 to display the scoreboard | Scoreboard will be shown | As expected |
 
 <details><summary>Images</summary>
-<img src="">
-<img src="">
+<img src="https://github.com/ArronBeale/CI_PP3_The_Simpsons_Quiz/blob/main/docs/features/feature_scoreboard.PNG?raw=true">
 </details>
 
 Site Owner
@@ -398,44 +397,43 @@ Site Owner
 
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
-| | | | |
+| Quiz | From the main menu select option 1 to start the quiz | Quiz will begin | As expected |
 
 <details><summary>Images</summary>
-<img src="">
-<img src="">
+<img src="https://github.com/ArronBeale/CI_PP3_The_Simpsons_Quiz/blob/main/docs/features/feature_main_menu2.PNG?raw=true">
+<img src="https://github.com/ArronBeale/CI_PP3_The_Simpsons_Quiz/blob/main/docs/features/feature_quiz.PNG?raw=true">
 </details>
 
 9. As the site owner, I would like an eye catching logo.
 
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
-| | | | |
+| Logo | Run programme and advance as prompted to be brought to main menu where logo is located | Logo will be displayed | As expected |
 
 <details><summary>Images</summary>
-<img src="">
-<img src="">
+<img src="https://github.com/ArronBeale/CI_PP3_The_Simpsons_Quiz/blob/main/docs/features/feature_main_menu.PNG?raw=true">
 </details>
 
 10. As the site owner, I would like some humor on the main menu.
 
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
-| | | | |
+| Main Menu | Run programme and advance as prompted to be brought to main menu | find player name listed as employee of Springfield Nuclear Power Plant and a sponsor message from Staff IQ Department | As expected |
 
 <details><summary>Images</summary>
-<img src="">
-<img src="">
+<img src="https://github.com/ArronBeale/CI_PP3_The_Simpsons_Quiz/blob/main/docs/features/feature_main_menu.PNG?raw=true">
 </details>
 
 11. As the site owner, I would like valid data from the player especially correct email formats.
 
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
-| | | | |
+| Validate Player | Enter incorrect email format | Error is displayed to enter correct format  | As expected |
+| Validate Player | Enter incorrect name format, less than 3 chars or more than 12 | | |
 
 <details><summary>Images</summary>
-<img src="">
-<img src="">
+<img src="https://github.com/ArronBeale/CI_PP3_The_Simpsons_Quiz/blob/main/docs/features/feature_validate_returning_player2.PNG?raw=true">
+<img src="https://github.com/ArronBeale/CI_PP3_The_Simpsons_Quiz/blob/main/docs/features/feature_validate_returning_player3.PNG?raw=true">
 </details>
 
 12. As the site owner, I would like a database of player scores, names and emails.
