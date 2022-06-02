@@ -469,29 +469,26 @@ Site Owner
 
 
 ### Automated Testing
- - Automated testing using the Unittest Library.
+ 
  <details><summary>View automated testing</summary>
 
 - Automated testing was done using the unittest library for Python.
 
-<img src="">
-
-
 - Functions tested were for email validation for correct format of emails submitted by the user.
 
-<img src="">
+<img src="https://github.com/ArronBeale/CI_PP3_The_Simpsons_Quiz/blob/main/docs/validation/validation_unit_tests.PNG?raw=true">
 
 - Tests ran and passed with the correct email format submitted for the test and failed when an incorrect format was submitted into the test.
 
-<img src="">
+<img src="https://github.com/ArronBeale/CI_PP3_The_Simpsons_Quiz/blob/main/docs/validation/validation_unit_tests2.PNG?raw=true">
 
-<img src="">
+<img src="https://github.com/ArronBeale/CI_PP3_The_Simpsons_Quiz/blob/main/docs/validation/validation_unit_tests4.PNG?raw=true">
+
+<img src="https://github.com/ArronBeale/CI_PP3_The_Simpsons_Quiz/blob/main/docs/validation/validation_unit_tests3.PNG?raw=true">
 
 - Tests were also created to for calculating the total number of players so far, the total combined score of all scores submitted and the average score of players.
 
-<img src="">
-
-
+<img src="https://github.com/ArronBeale/CI_PP3_The_Simpsons_Quiz/blob/main/docs/validation/validation_unit_tests.PNG?raw=true">
 
 
 </details>
