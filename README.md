@@ -467,10 +467,34 @@ Site Owner
 </details>
 </details>
 
-<!-- work in progress -->
-### Automated Testing
- - Automated testing using the Unittest Library
 
+### Automated Testing
+ - Automated testing using the Unittest Library.
+ <details><summary>View automated testing</summary>
+
+- Automated testing was done using the unittest library for Python.
+
+<img src="">
+
+
+- Functions tested were for email validation for correct format of emails submitted by the user.
+
+<img src="">
+
+- Tests ran and passed with the correct email format submitted for the test and failed when an incorrect format was submitted into the test.
+
+<img src="">
+
+<img src="">
+
+- Tests were also created to for calculating the total number of players so far, the total combined score of all scores submitted and the average score of players.
+
+<img src="">
+
+
+
+
+</details>
 
 
 
