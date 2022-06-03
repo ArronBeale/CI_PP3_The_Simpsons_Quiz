@@ -501,6 +501,10 @@ Site Owner
 
 | **Bug** | **Fix** |
 | ----------- | ----------- |
+| Player name not displaying in menu | Name variable refrenced in validation.py so needed to be imported and referenced as val.name|
+| Stats function not calculating total score | Fucnction was given the players database and not the scores database, corrected by directing function to scores database |
+| Logo too big for terminal | A new logo was chosen as the original was far too big to fit into the terminal |
+| | |
 | | |
 
 
