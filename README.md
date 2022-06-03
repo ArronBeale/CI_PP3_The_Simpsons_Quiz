@@ -59,7 +59,7 @@ anyone who is a fan of the show and from ages 10 years and older.
 - Name is remembered on next visit
 - Ability to view a scoreboard of past players
 
-# Manual
+## Manual
 <details><summary>Click here to view the manual</summary>
  
  ### Player Validation
@@ -97,18 +97,18 @@ anyone who is a fan of the show and from ages 10 years and older.
 [Back to Top](<#table-of-content>)  
 # User Stories
 
-## First Time User
+### First Time User
 1. As a player, I would like to know how to play.
 2. As a player, I would like to have a main menu.
 3. As a player, I would like to register my name and email for future visits.
 4. As a player, I would like to upload my score to a scoreboard.
 5. As a player, I would like to see statistics.
 
-## Returning User
+### Returning User
 6. As a returning player, I would like to be remembered.
 7. As a returning player, I would like to view a scoreboard.
  
-## Site Owner
+### Site Owner
 8. As the site owner, I would like the game to be challenging and fun.
 9. As the site owner, I would like an eye catching logo.
 10. As the site owner, I would like some humor on the main menu.
@@ -313,7 +313,7 @@ anyone who is a fan of the show and from ages 10 years and older.
 
 # Testing
 
-### - Manual Testing
+### Manual Testing
 
 <details><summary>View manual testing</summary>
 
@@ -506,7 +506,7 @@ Site Owner
 
 [Back to Top](<#table-of-content>)
 # Deployment
-## Heroku
+### Heroku
 
 [Official Page](https://devcenter.heroku.com/articles/git) (Ctrl + click)
 1. Log in to your account at heroku.com.
@@ -521,12 +521,12 @@ Site Owner
 10. If prefered, click on "Enable Automatic Deploys", which keeps the app up to date with your GitHub repository
 11. Wait for the app to build. Once ready you will see the “App was successfully deployed” message and a 'View' button to take you to your deployed link.
 
-## For Repository
+### Fork Repository
 To fork the repository by following these steps:
 1. Go to the GitHub repository
 2. Click on Fork button in upper right hand corner
 
-## Clone Repository
+### Clone Repository
 You can clone the repository by following these steps:
 1. Go to the GitHub repository 
 2. Locate the Code button above the list of files and click it 
@@ -541,13 +541,21 @@ You can clone the repository by following these steps:
 
 
 ### Media
-- Favicon: <a href="https://www.flaticon.com/free-icons/nuclear" title="nuclear icons">Nuclear icons created by Freepik - Flaticon</a>
-- Background image: <a href="https://www.freepik.com/vectors/fluffy-clouds">Fluffy clouds vector created by pch.vector - www.freepik.com</a>
+- [Flaticon](https://www.flaticon.com/free-icon/physics_4270905?term=nuclear&page=1&position=16&page=1&position=16&related_id=4270905&origin=search): Nuclear icons created by Freepik - Flaticon</a>
+- [Background image](https://www.freepik.com/vectors/fluffy-clouds) 
+created by pch.vector - www.freepik.com</a>
 
 ### Code
-- 
+- [Gspread](https://docs.gspread.org/en/v5.4.0/)
+- [ASCII Art Generator](https://patorjk.com/software/taag/#p=display&f=Graffiti&t=Type%20Something%20) by [https://patorjk.com/](https://patorjk.com/)
 
 ## Acknowledgements
+
+Special thanks to the following:
+
+Code Institute for providing this learning platform.
+My Mentor Mo Shami for the valuable guidance and advice.
+CI Slack Community for assistance in any help or queries asked.
 
 Special thanks to the following:
 - 
