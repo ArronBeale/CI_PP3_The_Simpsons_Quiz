@@ -552,13 +552,9 @@ created by pch.vector - www.freepik.com</a>
 
 ## Acknowledgements
 
-Special thanks to the following:
-
-Code Institute for providing this learning platform.
-My Mentor Mo Shami for the valuable guidance and advice.
-CI Slack Community for assistance in any help or queries asked.
-
-Special thanks to the following:
-- 
+### Special thanks to the following:
+- Code Institute for providing this learning platform.
+- My Mentor, Mo Shami for the valuable guidance and advice.
+- CI Slack Community for assistance in any help or queries asked.
 
 [Back to Top](<#table-of-content>)
