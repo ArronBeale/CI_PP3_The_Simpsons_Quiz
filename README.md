@@ -8,7 +8,7 @@ Developer: Arron Beale
 (Note: Ctrl + click to open in a new tab)    
 
 
-# Table of Content
+## Table of Content
 1. [Project Goals](#project-goals)
    1. [User Goals](#user-goals)
    2. [Site owner Goals](#site-owner-goals)
@@ -31,28 +31,28 @@ Developer: Arron Beale
 10. [Credits](#credits)
 11. [Acknowledgements](#ackowledgements)
 
-# Project Goals
+## Project Goals
 
-## User Goals
+### User Goals
 - To play a fun quiz game based on The Simpsons
 - To test my knowledge of The Simpsons world
 - The site remembers me on my next visit
 - My score is recorded to a scoreboard
 
-## Site Owner Goals
+### Site Owner Goals
 - To provide a fun quiz to users
 - To register new players and remember previous players
 - To provide a how to play screen
 - To ensureplayers get feedback while playing
 
 [Back to Top](<#table-of-content>)
-# User Experience
+## User Experience
 
-## Target Audience
+### Target Audience
 - The target audience for The Simpsons Quiz is
 anyone who is a fan of the show and from ages 10 years and older.
 
-## User Requirments and Expectations
+### User Requirments and Expectations
 - A fun and engaging quiz
 - Intuitive navigation and flow throughout
 - Ability to save score to a scoreboard
@@ -95,7 +95,7 @@ anyone who is a fan of the show and from ages 10 years and older.
  
 
 [Back to Top](<#table-of-content>)  
-# User Stories
+## User Stories
 
 ### First Time User
 1. As a player, I would like to know how to play.
@@ -117,7 +117,7 @@ anyone who is a fan of the show and from ages 10 years and older.
 13. As the site owner, i would like to give the option for a player to submit their score or not.
  
 [Back to Top](<#table-of-content>)
-# Technical Design
+## Technical Design
 
 
 ### Flow Charts
@@ -142,7 +142,7 @@ anyone who is a fan of the show and from ages 10 years and older.
 
    
 [Back to Top](<#table-of-content>)
-# Technologies Used
+## Technologies Used
 
 ### Languages
 - [Python](https://www.python.org/)
@@ -182,9 +182,9 @@ anyone who is a fan of the show and from ages 10 years and older.
 - [Google Auth](https://google-auth.readthedocs.io/en/master/)
   - Justification: Used to link the Google API in order to be authorised to access and edit the Google Sheets.
 
-# Features
+## Features
 
-## Quiz
+### Quiz
 - A fun and challengibng quiz for all fans of The Simpsons.
 - Contains a variety of questions related to The Simpsons.
 - User stories covered:
@@ -193,7 +193,7 @@ anyone who is a fan of the show and from ages 10 years and older.
 </details>  
 
 
-## Validate New Player
+### Validate New Player
 - Asks if player has played before
 - New players will be prompted to input their email and name to be stored for future visits and for the scoreboard.
 - User stories covered:
@@ -202,7 +202,7 @@ anyone who is a fan of the show and from ages 10 years and older.
 </details>  
 
 
-## Validate returning Player
+### Validate returning Player
 - Asks returning players for their email and will then extract their name from the player database.
 - User stories covered:
 <details><summary>Validate returning Player Image
@@ -211,7 +211,7 @@ anyone who is a fan of the show and from ages 10 years and older.
 </details>  
 
 
-## Validate and Greet Name
+### Validate and Greet Name
 - Will greet players by their name after validation has completed.
 - User stories covered:
 <details><summary>Validate and Greet Name Image</summary>
@@ -219,7 +219,7 @@ anyone who is a fan of the show and from ages 10 years and older.
 </details>  
 
 
-## Main Menu
+### Main Menu
 - Contains the logo for the quiz.
 - Home to options: play, scoreboard, how to play and stats.
 - User stories covered:
@@ -229,7 +229,7 @@ anyone who is a fan of the show and from ages 10 years and older.
 </details>  
 
 
-## Logo
+### Logo
 - A large ascii art logo in yellow to reflect the image of The Simpsons.
 - User stories covered:
 <details><summary>Logo Image</summary>
@@ -237,7 +237,7 @@ anyone who is a fan of the show and from ages 10 years and older.
 </details>  
 
 
-## How to Play
+### How to Play
 - Displays to the player how to play the quiz.
 - User stories covered:
 <details><summary>User stories covered</summary>
@@ -245,7 +245,7 @@ anyone who is a fan of the show and from ages 10 years and older.
 </details>  
 
 
-## Scoreboard
+### Scoreboard
 - Displays the scoreboard of all past players who have chosen to upload their score.
 - User stories covered:
 <details><summary>Scoreboard Image</summary>
@@ -253,7 +253,7 @@ anyone who is a fan of the show and from ages 10 years and older.
 </details>  
 
 
-## Add to Scoreboard
+### Add to Scoreboard
 - Gives the option to add their score to the scoreboard.
 - User stories covered:
 <details><summary>Add to Scoreboard Image</summary>
@@ -261,7 +261,7 @@ anyone who is a fan of the show and from ages 10 years and older.
 </details>  
 
 
-## Player Database
+### Player Database
 - Stores the player names and email addresses to a Google Sheet.
 - User stories covered:
 <details><summary>Players Database Image</summary>
@@ -269,7 +269,7 @@ anyone who is a fan of the show and from ages 10 years and older.
 </details>  
 
 
-## Scoreboard Database
+### Scoreboard Database
 - Stores player name and score to a Google Sheet.
 - User stories covered:
 <details><summary>Scoreboard Database Image</summary>
@@ -277,7 +277,7 @@ anyone who is a fan of the show and from ages 10 years and older.
 </details>  
 
 
-## Results
+### Results
 - Displays player score, name and email after the quiz has ended.
 - User stories covered:
 <details><summary>Results Image</summary>
@@ -285,7 +285,7 @@ anyone who is a fan of the show and from ages 10 years and older.
 </details>  
 
 
-## Stats
+### Stats
 - Displays a statistics screen that shows total players, total combined score and average score of players.
 - User stories covered:
 <details><summary>Stats Image</summary>
@@ -294,7 +294,7 @@ anyone who is a fan of the show and from ages 10 years and older.
 
 
 [Back to Top](<#table-of-content>)
-# Validation
+## Validation
 
 
 ### PEP8 Validation
@@ -311,7 +311,7 @@ anyone who is a fan of the show and from ages 10 years and older.
 </details>  
 
 
-# Testing
+## Testing
 
 ### Manual Testing
 
@@ -509,7 +509,7 @@ Site Owner
 
 
 [Back to Top](<#table-of-content>)
-# Deployment
+## Deployment
 ### Heroku
 
 [Official Page](https://devcenter.heroku.com/articles/git) (Ctrl + click)
