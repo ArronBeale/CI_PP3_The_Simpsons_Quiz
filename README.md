@@ -504,7 +504,7 @@ Site Owner
 | Player name not displaying in menu | Name variable refrenced in validation.py so needed to be imported and referenced as val.name|
 | Stats function not calculating total score | Fucnction was given the players database and not the scores database, corrected by directing function to scores database |
 | Logo too big for terminal | A new logo was chosen as the original was far too big to fit into the terminal |
-| | |
+| Score not resetting after choosing to play again | I overlooked that the player could choose to play again from the main menu after thir first game, I just had to add a line of code to rest score to zero when play option is selected |
 | | |
 
 

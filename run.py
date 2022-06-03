@@ -285,7 +285,7 @@ def score_screen():
 
     else:
         print(Col.RED + 'Please choose Y or N')
-        time.sleep(1)
+        time.sleep(2)
         score_screen()
 
 
