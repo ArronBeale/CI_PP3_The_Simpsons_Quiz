@@ -478,9 +478,11 @@ Site Owner
 
 <img src="https://github.com/ArronBeale/CI_PP3_The_Simpsons_Quiz/blob/main/docs/validation/validation_unit_tests.PNG?raw=true">
 
-- Tests ran and passed with the correct email format submitted for the test and failed when an incorrect format was submitted into the test.
+- Test ran and passed with the correct email format submitted for the test.
 
 <img src="https://github.com/ArronBeale/CI_PP3_The_Simpsons_Quiz/blob/main/docs/validation/validation_unit_tests2.PNG?raw=true">
+
+- Test failed when an incorrect format was submitted into the test.
 
 <img src="https://github.com/ArronBeale/CI_PP3_The_Simpsons_Quiz/blob/main/docs/validation/validation_unit_tests4.PNG?raw=true">
 
@@ -489,11 +491,7 @@ Site Owner
 - Tests were also created to for calculating the total number of players so far, the total combined score of all scores submitted and the average score of players.
 
 <img src="https://github.com/ArronBeale/CI_PP3_The_Simpsons_Quiz/blob/main/docs/validation/validation_unit_tests.PNG?raw=true">
-
-
 </details>
-
-
 
 
 [Back to Top](<#table-of-content>)
@@ -505,7 +503,6 @@ Site Owner
 | Stats function not calculating total score | Fucnction was given the players database and not the scores database, corrected by directing function to scores database |
 | Logo too big for terminal | A new logo was chosen as the original was far too big to fit into the terminal |
 | Score not resetting after choosing to play again | I overlooked that the player could choose to play again from the main menu after thir first game, I just had to add a line of code to rest score to zero when play option is selected |
-| | |
 
 
 [Back to Top](<#table-of-content>)
