@@ -472,11 +472,13 @@ Site Owner
  
  <details><summary>View automated testing</summary>
 
-- Automated testing was done using the unittest library for Python.
+- Automated testing was done using the unittest and coverage librararies for Python.
 
+
+### Unit Tests
 - Functions tested were for email validation for correct format of emails submitted by the user.
 
-<img src="https://github.com/ArronBeale/CI_PP3_The_Simpsons_Quiz/blob/main/docs/validation/validation_unit_tests.PNG?raw=true">
+<img src="https://github.com/ArronBeale/CI_PP3_The_Simpsons_Quiz/blob/main/docs/validation/validation_unit_tests1.PNG?raw=true">
 
 - Test ran and passed with the correct email format submitted for the test.
 
@@ -488,10 +490,32 @@ Site Owner
 
 <img src="https://github.com/ArronBeale/CI_PP3_The_Simpsons_Quiz/blob/main/docs/validation/validation_unit_tests3.PNG?raw=true">
 
-- Tests were also created to for calculating the total number of players so far, the total combined score of all scores submitted and the average score of players.
+- Tests were also created to for calculating the total number of players so far, the total combined score of all scores submitted and the average score of players. Each test was limited to one assertion in order to easily identify any test that might fail.
 
-<img src="https://github.com/ArronBeale/CI_PP3_The_Simpsons_Quiz/blob/main/docs/validation/validation_unit_tests.PNG?raw=true">
+<img src="https://github.com/ArronBeale/CI_PP3_The_Simpsons_Quiz/blob/main/docs/validation/validation_unit_tests1.PNG?raw=true">
+
+
+### Coverage 
+
+- Coverage was installed via the terminal, pip install coverage
+<img src="https://github.com/ArronBeale/CI_PP3_The_Simpsons_Quiz/blob/main/docs/validation/validation_coverage1.PNG?raw=true">
+
+
+- Coverage was then used to test using the following command, coverage run test_validation.py
+<img src="https://github.com/ArronBeale/CI_PP3_The_Simpsons_Quiz/blob/main/docs/validation/validation_coverage2.PNG?raw=true">
+
+
+- The results of the test were the following:
+<img src="https://github.com/ArronBeale/CI_PP3_The_Simpsons_Quiz/blob/main/docs/validation/validation_coverage3.PNG?raw=true">
+
+- A HTML report was also generated using the command, coverage html
+<img src="https://github.com/ArronBeale/CI_PP3_The_Simpsons_Quiz/blob/main/docs/validation/validation_coverage4.PNG?raw=true">
+
 </details>
+
+
+
+
 
 
 [Back to Top](<#table-of-content>)
