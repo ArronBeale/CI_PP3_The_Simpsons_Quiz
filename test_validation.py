@@ -38,6 +38,5 @@ class Test_average_score(unittest.TestCase):
         self.assertNotEqual(val.total_score(), 0)
 
 
-
 if __name__ == '__main__':
     unittest.main()

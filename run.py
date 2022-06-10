@@ -388,7 +388,7 @@ question_cues = [
      2) Millhouse Housingtom\n \
      3) Millhouse Van Houten\n ",
 
-    "Who owns Springfield nuclear Power Plant?\n \
+    "Who owns Springfield Nuclear Power Plant?\n \
      1) Mr Burns\n \
      2) Mr Smithers\n \
      3) Mayor Quimby\n ",
